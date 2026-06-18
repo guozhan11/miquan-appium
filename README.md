@@ -1,77 +1,109 @@
 # Miquan Appium Scraper
 
-Starter scraper for collecting visible script ratings and review text from the iOS app `谜圈`.
+Scrapers for collecting visible script ratings and review text from the iOS app `谜圈`.
 
 ## Prerequisites
 
 1. Keep Appium Server running on `http://127.0.0.1:4723`.
-2. Keep the iPhone connected and trusted.
-3. Unlock the iPhone and keep it awake while the scraper starts.
-4. Make sure the app is logged in.
+2. Keep the iPhone or iPad connected, trusted, unlocked, and awake.
+3. Make sure `谜圈` is logged in.
 4. Install Python dependencies:
 
 ```bash
 python3 -m pip install -r miquan_appium/requirements.txt
 ```
 
-## Run
+## Input
 
 `miquan_appium/search_terms.csv` has been generated from:
 
 `/Users/norazhan/Desktop/LARP/Text_Analysis/ocr/scripts/剧本杀合集目录-8月份已更新.xlsx`
 
-Start with a small test run:
+## iPad pipeline
 
-```bash
-python3 miquan_appium/miquan_appium_scraper.py --input miquan_appium/search_terms.csv --output miquan_appium/miquan_reviews_sample.csv --limit 3 --max-scrolls 4
-```
-
-Then run the full list:
-
-```bash
-python3 miquan_appium/miquan_appium_scraper.py --input miquan_appium/search_terms.csv --output miquan_appium/miquan_reviews.csv
-```
-
-## iPad run
-
-Use the separate iPad scraper so the iPhone pipeline remains unchanged:
+Use the iPad scraper for the current ratings pipeline:
 
 ```bash
 python3 miquan_appium/miquan_ipad_appium_scraper.py --input miquan_appium/search_terms.csv --limit 3
 ```
 
-By default, iPad results and debug snapshots are written separately:
+Default outputs:
 
 - `miquan_appium/miquan_ipad_ratings.csv`
 - `miquan_appium/miquan_ipad_reviews.csv`
 - `miquan_appium/debug_ipad/`
 
-The iPad scraper also skips scripts that already have successful ratings in the
-iPhone output `miquan_appium/miquan_ratings.csv`. Failed or zero-only iPhone rows
-are still retried on iPad. To scrape without using the iPhone output as a skip
-list, pass:
+Common modes:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --mode ratings
+python3 miquan_appium/miquan_ipad_appium_scraper.py --mode reviews
+python3 miquan_appium/miquan_ipad_appium_scraper.py --mode both
+```
+
+The iPad scraper skips scripts that already have successful rows in:
+
+`miquan_appium/miquan_ratings.csv`
+
+To ignore that skip list:
 
 ```bash
 python3 miquan_appium/miquan_ipad_appium_scraper.py --no-skip-iphone-ratings
 ```
 
-To use a different completed-ratings CSV as the skip list:
+To rerun items already present in the iPad output:
 
 ```bash
-python3 miquan_appium/miquan_ipad_appium_scraper.py --skip-ratings-from path/to/ratings.csv
+python3 miquan_appium/miquan_ipad_appium_scraper.py --rerun-existing
 ```
 
-If Appium cannot auto-select the iPad, pass the iPad UDID directly:
+## Matching behavior
+
+The iPad scraper uses relaxed title matching for common `谜圈` differences:
+
+- punctuation-only differences, e.g. `怪谈事务所诡楼` vs `怪谈事务所：诡楼`
+- full-width symbols, e.g. `Hi老妖婆` vs `Hi！老妖婆`
+- parenthetical suffixes, e.g. `长生祭（cs祭）` vs `长生祭`
+- Chinese/English reordered names, e.g. `往事ThePast` vs `ThePast往事`
+- prefix titles, e.g. `猎人笔记雪夜` can match `猎人笔记：雪夜`
+
+If exact search has no result, it can ask an AI model for better Chinese `剧本杀` search queries, then scans visible search results for the best matching title instead of blindly clicking the first row.
+
+## AI fallback
+
+Copy `.env.example` to `.env` and set your key:
 
 ```bash
-python3 miquan_appium/miquan_ipad_appium_scraper.py --udid 00008112-0019593922DBA01E --platform-version 26.3.1 --limit 3
+cp miquan_appium/.env.example miquan_appium/.env
+```
+
+Supported variables:
+
+- `MIQUAN_AI_API_KEY` or `OPENAI_API_KEY`
+- `MIQUAN_AI_MODEL`, default `gpt-4o-mini`
+- `MIQUAN_AI_API_URL`, default OpenAI chat completions URL
+
+## iPad Appium config
+
+Defaults are set for the current iPad:
+
+- `00008112-0019593922DBA01E`
+- `com.guozhan.WebDriverAgentRunner`
+
+Override if needed:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --udid YOUR_UDID --platform-version 26.3.1 --limit 3
 ```
 
 You can also set `MIQUAN_IPAD_UDID`, `MIQUAN_IPAD_PLATFORM_VERSION`, `MIQUAN_IPAD_DEVICE_NAME`, `MIQUAN_IPAD_WDA_PORT`, and `MIQUAN_IPAD_WDA_BUNDLE_ID`.
 
-The script uses the WebDriverAgent bundle ID and device UDID that were confirmed during setup:
+## iPhone scraper
 
-- `00008112-0019593922DBA01E`
-- `com.guozhan.WebDriverAgentRunner`
+The original iPhone scraper is still available:
+
+```bash
+python3 miquan_appium/miquan_appium_scraper.py --input miquan_appium/search_terms.csv --output miquan_appium/miquan_reviews.csv
+```
 
 The scraper only reads text exposed through Appium from your logged-in app session. Keep scroll counts modest and respect the app's terms.

@@ -32,9 +32,46 @@ Then run the full list:
 python3 miquan_appium/miquan_appium_scraper.py --input miquan_appium/search_terms.csv --output miquan_appium/miquan_reviews.csv
 ```
 
+## iPad run
+
+Use the separate iPad scraper so the iPhone pipeline remains unchanged:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --input miquan_appium/search_terms.csv --limit 3
+```
+
+By default, iPad results and debug snapshots are written separately:
+
+- `miquan_appium/miquan_ipad_ratings.csv`
+- `miquan_appium/miquan_ipad_reviews.csv`
+- `miquan_appium/debug_ipad/`
+
+The iPad scraper also skips scripts that already have successful ratings in the
+iPhone output `miquan_appium/miquan_ratings.csv`. Failed or zero-only iPhone rows
+are still retried on iPad. To scrape without using the iPhone output as a skip
+list, pass:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --no-skip-iphone-ratings
+```
+
+To use a different completed-ratings CSV as the skip list:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --skip-ratings-from path/to/ratings.csv
+```
+
+If Appium cannot auto-select the iPad, pass the iPad UDID directly:
+
+```bash
+python3 miquan_appium/miquan_ipad_appium_scraper.py --udid 00008112-0019593922DBA01E --platform-version 26.3.1 --limit 3
+```
+
+You can also set `MIQUAN_IPAD_UDID`, `MIQUAN_IPAD_PLATFORM_VERSION`, `MIQUAN_IPAD_DEVICE_NAME`, `MIQUAN_IPAD_WDA_PORT`, and `MIQUAN_IPAD_WDA_BUNDLE_ID`.
+
 The script uses the WebDriverAgent bundle ID and device UDID that were confirmed during setup:
 
-- `00008140-000975A43E41801C`
+- `00008112-0019593922DBA01E`
 - `com.guozhan.WebDriverAgentRunner`
 
 The scraper only reads text exposed through Appium from your logged-in app session. Keep scroll counts modest and respect the app's terms.

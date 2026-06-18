@@ -1,0 +1,12 @@
+Could not get page source: Message: Valid JSON must be responded, error of Error Domain=NSCocoaErrorDomain Code=3852 "The string 0x11af4b700 failed to convert to UTF8" UserInfo={NSDebugDescription=The string 0x11af4b700 failed to convert to UTF8}
+Stacktrace:
+ProxyRequestError: Request failed with status code 500
+    at JWProxy.proxy (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:230:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ProtocolConverter.convertAndProxy (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/protocol-converter.js:103:16)
+    at async JWProxy.proxyCommand (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:257:16)
+    at async JWProxy.command (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:266:38)
+    at async XCUITestDriver.proxyCommand (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/proxy-helper.js:81:17)
+    at async XCUITestDriver.mobileGetSource (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/source.js:48:13)
+    at async XCUITestDriver.getPageSource (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/source.js:24:25)
+    at async runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:117:24)

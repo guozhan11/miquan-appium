@@ -1,0 +1,10 @@
+Could not get page source: Message: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: socket hang up
+    at ProxyRequestError.getActualError (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/protocol/errors.js:699:16)
+    at JWProxy.command (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:270:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async XCUITestDriver.proxyCommand (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/proxy-helper.js:81:17)
+    at async XCUITestDriver.mobileGetSource (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/source.js:48:13)
+    at async XCUITestDriver.getPageSource (/Users/norazhan/.appium/node_modules/appium-xcuitest-driver/build/lib/commands/source.js:27:12)
+    at async runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:117:24)

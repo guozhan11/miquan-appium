@@ -18,42 +18,79 @@ from pathlib import Path
 from typing import Iterable
 
 from appium import webdriver
+from appium.webdriver.client_config import AppiumClientConfig
 from appium.options.ios import XCUITestOptions
 from selenium.common.exceptions import NoSuchElementException, WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from urllib3.exceptions import MaxRetryError, ProtocolError, ReadTimeoutError
 
 
 APPIUM_URL = "http://127.0.0.1:4723"
+SCRIPT_DIR = Path(__file__).resolve().parent
+APPIUM_COMMAND_TIMEOUT_SECONDS = 180
+APP_BUNDLE_ID = "com.juhaowan123.www"
 
 DEFAULT_CAPS = {
     "platformName": "iOS",
     "appium:automationName": "XCUITest",
     "appium:deviceName": "iPhone 16 Plus",
     "appium:udid": "00008140-000975A43E41801C",
-    "appium:bundleId": "com.juhaowan123.www",
+    "appium:platformVersion": "26.5",
+    "appium:bundleId": APP_BUNDLE_ID,
     "appium:noReset": True,
+    "appium:newCommandTimeout": 120,
     "appium:updatedWDABundleId": "com.guozhan.WebDriverAgentRunner",
-    "appium:usePrebuiltWDA": True,
+    "appium:usePrebuiltWDA": False,
+    "appium:useNewWDA": True,
+    "appium:wdaLocalPort": 8101,
+    "appium:showXcodeLog": True,
+    "appium:wdaLaunchTimeout": 120000,
+    "appium:wdaConnectionTimeout": 120000,
+    "appium:wdaStartupRetries": 3,
+    "appium:wdaStartupRetryInterval": 10000,
+    "appium:customSnapshotTimeout": 20000,
+    "appium:snapshotMaxDepth": 50,
 }
 
 
 TEXT_TYPES = {"XCUIElementTypeStaticText", "XCUIElementTypeTextView"}
 SENTIMENTS = {"推荐", "一般", "不行"}
-DIMENSION_LABELS = {
+DIMENSION_COLUMNS = [
     "剧情",
-    "还原",
-    "玩法",
+    "推理",
+    "悬疑",
+    "欢乐",
     "情感",
     "机制",
+    "还原",
     "沉浸",
     "演绎",
-    "推理",
+    "玩法",
     "故事",
     "难度",
     "互动",
-}
+    "立意",
+    "阵营",
+    "本格",
+    "变格",
+    "恐怖",
+    "硬核",
+]
+DIMENSION_LABELS = set(DIMENSION_COLUMNS)
+RATING_BASE_FIELDS = [
+    "query",
+    "script_title",
+    "overall_rating",
+    *DIMENSION_COLUMNS,
+    "want_count",
+    "played_count",
+    "review_count",
+    "publishers",
+    "metadata",
+    "tags",
+]
 SECTION_STOP_WORDS = {
     "本城可玩店铺",
     "正在组局",
@@ -110,9 +147,13 @@ def make_driver() -> webdriver.Remote:
     options = XCUITestOptions()
     for key, value in DEFAULT_CAPS.items():
         options.set_capability(key, value)
+    client_config = AppiumClientConfig(
+        remote_server_addr=APPIUM_URL,
+        timeout=APPIUM_COMMAND_TIMEOUT_SECONDS,
+    )
     try:
-        return webdriver.Remote(APPIUM_URL, options=options)
-    except WebDriverException as exc:
+        return webdriver.Remote(APPIUM_URL, options=options, client_config=client_config)
+    except (WebDriverException, MaxRetryError, ProtocolError, ReadTimeoutError, TimeoutError) as exc:
         message = str(exc)
         if "could not be, unlocked" in message or "BSErrorCodeDescription=Locked" in message:
             raise RuntimeError(
@@ -124,11 +165,67 @@ def make_driver() -> webdriver.Remote:
             raise RuntimeError(
                 f"Could not connect to Appium at {APPIUM_URL}. Start Appium Server, then rerun."
             ) from exc
+        if "Remote end closed connection" in message or "Connection aborted" in message:
+            raise RuntimeError(
+                "Appium closed the session request before WebDriverAgent was ready. "
+                "Stop Appium, unlock and reconnect the iPhone, restart Appium, then rerun. "
+                "Existing rows in miquan_ratings.csv will be skipped."
+            ) from exc
+        if "Read timed out" in message or "timed out" in message:
+            raise RuntimeError(
+                "Timed out while creating a new Appium session. Restart Appium Server, "
+                "unlock the iPhone, keep 谜圈 open or on the home screen, then rerun. "
+                "Existing rows in miquan_ratings.csv will be skipped."
+            ) from exc
+        if (
+            "Unable to launch WebDriverAgent" in message
+            or "Unable to start WebDriverAgent session" in message
+            or "xcodebuild failed with code 65" in message
+            or "socket hang up" in message
+        ):
+            excerpt = " ".join(message.split())
+            if len(excerpt) > 700:
+                excerpt = excerpt[:700] + "..."
+            raise RuntimeError(
+                "Appium could not start WebDriverAgent on the iPhone. Stop Appium, "
+                "unlock and reconnect the iPhone, remove any stuck WebDriverAgentRunner "
+                "from the phone if needed, then start Appium again. Existing rows in "
+                "miquan_ratings.csv will be skipped on rerun.\n"
+                f"Last Appium error excerpt: {excerpt}"
+            ) from exc
         raise
 
 
 def wait_for(driver: webdriver.Remote, by: str, selector: str, timeout: int = 10):
     return WebDriverWait(driver, timeout).until(EC.presence_of_element_located((by, selector)))
+
+
+def is_app_not_running_error(exc: BaseException) -> bool:
+    message = str(exc)
+    return APP_BUNDLE_ID in message and "not running" in message
+
+
+def is_page_source_error(exc: BaseException) -> bool:
+    message = str(exc)
+    return (
+        "Cannot get 'xml' source" in message
+        or "mobileGetSource" in message
+        or "failed to convert to UTF8" in message
+        or "Read timed out" in message
+        or "Max retries exceeded" in message
+    )
+
+
+def relaunch_app(driver: webdriver.Remote) -> bool:
+    try:
+        driver.activate_app(APP_BUNDLE_ID)
+    except (AttributeError, WebDriverException):
+        try:
+            driver.execute_script("mobile: launchApp", {"bundleId": APP_BUNDLE_ID})
+        except WebDriverException:
+            return False
+    time.sleep(3.0)
+    return True
 
 
 def all_texts(root: ET.Element) -> list[str]:
@@ -165,6 +262,14 @@ def text_entries(root: ET.Element) -> list[dict]:
 
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+
+
+def normalize_title(text: str) -> str:
+    return re.sub(r"\s+", "", clean_text(text))
+
+
+def is_exact_title_match(candidate: str, query: str) -> bool:
+    return normalize_title(candidate) == normalize_title(query)
 
 
 def parse_xml(source: str) -> ET.Element:
@@ -213,6 +318,21 @@ def tap_text_matching(
     return True
 
 
+def window_rect(driver: webdriver.Remote) -> dict:
+    try:
+        return driver.get_window_rect()
+    except WebDriverException:
+        return {"x": 0, "y": 0, "width": 430, "height": 932}
+
+
+def relative_point(driver: webdriver.Remote, x_ratio: float, y_ratio: float) -> dict[str, int]:
+    rect = window_rect(driver)
+    return {
+        "x": int(rect.get("x", 0) + rect.get("width", 430) * x_ratio),
+        "y": int(rect.get("y", 0) + rect.get("height", 932) * y_ratio),
+    }
+
+
 def go_to_search(driver: webdriver.Remote) -> None:
     """Open the search screen from the home page, or keep using it if already open."""
     if driver.find_elements(By.XPATH, "//XCUIElementTypeTextField"):
@@ -247,13 +367,16 @@ def go_to_search(driver: webdriver.Remote) -> None:
             wait_for(driver, By.XPATH, "//XCUIElementTypeTextField", timeout=8)
             return
 
-    # Last resort: the search control was observed at the top of the app.
-    driver.execute_script("mobile: tap", {"x": 210, "y": 88})
+    # Last resort: the search control was observed near the top center of the app.
+    driver.execute_script("mobile: tap", relative_point(driver, 0.49, 0.095))
     wait_for(driver, By.XPATH, "//XCUIElementTypeTextField", timeout=8)
 
 
 def has_search_field(driver: webdriver.Remote) -> bool:
-    return bool(driver.find_elements(By.XPATH, "//XCUIElementTypeTextField"))
+    try:
+        return bool(driver.find_elements(By.XPATH, "//XCUIElementTypeTextField"))
+    except WebDriverException:
+        return False
 
 
 def return_to_search_results(driver: webdriver.Remote, debug_dir: Path | None, query: str) -> bool:
@@ -275,7 +398,12 @@ def return_to_search_results(driver: webdriver.Remote, debug_dir: Path | None, q
             time.sleep(1.0)
             continue
         # The back arrow is frequently an unlabeled icon at the top-left.
-        driver.execute_script("mobile: tap", {"x": 28, "y": 82})
+        try:
+            driver.execute_script("mobile: tap", relative_point(driver, 0.065, 0.088))
+        except WebDriverException as exc:
+            if is_app_not_running_error(exc):
+                return False
+            raise
         time.sleep(1.0)
 
     dump_debug_snapshot(driver, debug_dir, f"return_to_search_failed_{query}")
@@ -290,6 +418,12 @@ def submit_search(driver: webdriver.Remote, query: str) -> None:
     except WebDriverException:
         pass
     field.send_keys(query + "\n")
+    time.sleep(0.5)
+    if not tap_search_tab(driver, "剧本"):
+        try:
+            driver.execute_script("mobile: tap", relative_point(driver, 0.90, 0.94))
+        except WebDriverException:
+            pass
     time.sleep(1.5)
 
     # Narrow to scripts. In this app the top tab may be exposed as text, not a button.
@@ -298,14 +432,23 @@ def submit_search(driver: webdriver.Remote, query: str) -> None:
 
 
 def tap_search_tab(driver: webdriver.Remote, tab_name: str) -> bool:
+    rect = window_rect(driver)
+    tab_min_y = rect.get("height", 932) * 0.10
+    tab_max_y = rect.get("height", 932) * 0.22
     candidates = driver.find_elements(
         By.XPATH,
         f"//*[@name={xpath_literal(tab_name)} or @label={xpath_literal(tab_name)} or @value={xpath_literal(tab_name)}]",
     )
     # Prefer the tab row near the top of the search page, not section headings lower down.
-    for element in sorted(candidates, key=lambda item: item.rect.get("y", 9999)):
+    positioned_candidates = []
+    for element in candidates:
+        try:
+            positioned_candidates.append((element.rect.get("y", 9999), element))
+        except WebDriverException:
+            continue
+    for _, element in sorted(positioned_candidates, key=lambda item: item[0]):
         rect = element.rect
-        if 95 <= rect.get("y", 0) <= 180:
+        if tab_min_y <= rect.get("y", 0) <= tab_max_y:
             tap_rect_center(driver, rect)
             return True
     return tap_if_present(driver, f"//XCUIElementTypeButton[@name={xpath_literal(tab_name)}]", timeout=1)
@@ -330,7 +473,10 @@ def dump_debug_snapshot(driver: webdriver.Remote, debug_dir: Path | None, name: 
         return
     debug_dir.mkdir(parents=True, exist_ok=True)
     source_path = debug_dir / f"{safe_name(name)}.xml"
-    source_path.write_text(driver.page_source, encoding="utf-8")
+    try:
+        source_path.write_text(get_page_source(driver), encoding="utf-8")
+    except Exception as exc:
+        source_path.write_text(f"Could not get page source: {exc}", encoding="utf-8")
     try:
         screenshot_path = debug_dir / f"{safe_name(name)}.png"
         driver.save_screenshot(str(screenshot_path))
@@ -338,26 +484,30 @@ def dump_debug_snapshot(driver: webdriver.Remote, debug_dir: Path | None, name: 
         pass
 
 
+def get_page_source(driver: webdriver.Remote, attempts: int = 3, delay: float = 1.0) -> str:
+    last_error: WebDriverException | None = None
+    for attempt in range(attempts):
+        try:
+            return driver.page_source
+        except WebDriverException as exc:
+            last_error = exc
+            if attempt < attempts - 1:
+                time.sleep(delay)
+    raise last_error or WebDriverException("Could not get page source")
+
+
 def open_first_script_result(driver: webdriver.Remote, query: str, debug_dir: Path | None = None) -> bool:
     if tap_first_script_result_cell(driver, query):
         time.sleep(2.0)
         return True
 
-    xpaths = [
-        f"//XCUIElementTypeStaticText[contains(@name, {xpath_literal(query)})]/ancestor::XCUIElementTypeCell[1]",
-        "//XCUIElementTypeStaticText[contains(@name, '分')]/ancestor::XCUIElementTypeCell[1]",
-        "//XCUIElementTypeTable/XCUIElementTypeCell[1]",
-        "//XCUIElementTypeTable//XCUIElementTypeCell[1]",
-    ]
-    for xpath in xpaths:
-        if tap_if_present(driver, xpath, timeout=4):
-            time.sleep(2.0)
-            return True
-
-    source = driver.page_source
     dump_debug_snapshot(driver, debug_dir, f"open_result_failed_{query}")
-    visible_text = "; ".join(all_texts(parse_xml(source))[:30])
-    print(f"  no tappable script result found for {query}. visible text: {visible_text[:500]}")
+    try:
+        source = get_page_source(driver)
+        visible_text = "; ".join(all_texts(parse_xml(source))[:30])
+    except WebDriverException:
+        visible_text = "source unavailable"
+    print(f"  no exact script title found for {query}. visible text: {visible_text[:500]}")
     return False
 
 
@@ -366,24 +516,24 @@ def tap_first_script_result_cell(driver: webdriver.Remote, query: str) -> bool:
     cells = driver.find_elements(By.XPATH, "//XCUIElementTypeCell")
     candidates = []
     for cell in cells:
-        rect = cell.rect
-        y = rect.get("y", 0)
-        if not (bounds["script_top"] <= y <= bounds["script_bottom"]):
+        try:
+            rect = cell.rect
+            y = rect.get("y", 0)
+            if not (bounds["script_top"] <= y <= bounds["script_bottom"]):
+                continue
+            texts = []
+            for child in cell.find_elements(By.XPATH, ".//XCUIElementTypeStaticText"):
+                value = (
+                    child.get_attribute("value")
+                    or child.get_attribute("label")
+                    or child.get_attribute("name")
+                    or ""
+                )
+                if value:
+                    texts.append(value)
+        except WebDriverException:
             continue
-        texts = []
-        for child in cell.find_elements(By.XPATH, ".//XCUIElementTypeStaticText"):
-            value = (
-                child.get_attribute("value")
-                or child.get_attribute("label")
-                or child.get_attribute("name")
-                or ""
-            )
-            if value:
-                texts.append(value)
-        joined = " ".join(texts)
-        if query not in joined:
-            continue
-        if not re.search(r"\d+(?:\.\d+)?分", joined):
+        if not any(is_exact_title_match(text, query) for text in texts):
             continue
         candidates.append((y, rect))
 
@@ -406,9 +556,9 @@ def tap_first_visible_result_title(driver: webdriver.Remote, query: str) -> bool
     section_bounds = get_search_section_bounds(driver)
     elements = driver.find_elements(
         By.XPATH,
-        f"//XCUIElementTypeStaticText[contains(@name, {xpath_literal(query)}) "
-        f"or contains(@label, {xpath_literal(query)}) "
-        f"or contains(@value, {xpath_literal(query)})]",
+        f"//XCUIElementTypeStaticText[@name={xpath_literal(query)} "
+        f"or @label={xpath_literal(query)} "
+        f"or @value={xpath_literal(query)}]",
     )
     if not elements:
         return False
@@ -417,8 +567,11 @@ def tap_first_visible_result_title(driver: webdriver.Remote, query: str) -> bool
     # heading ("用户"/"店铺"/"发行"). This avoids tapping a matching user name.
     visible_candidates = []
     for element in elements:
-        rect = element.rect
-        y = rect.get("y", 0)
+        try:
+            rect = element.rect
+            y = rect.get("y", 0)
+        except WebDriverException:
+            continue
         if (
             section_bounds["script_top"] <= y <= section_bounds["script_bottom"]
             and rect.get("width", 0) > 0
@@ -440,11 +593,15 @@ def tap_first_visible_result_title(driver: webdriver.Remote, query: str) -> bool
 
 
 def get_search_section_bounds(driver: webdriver.Remote) -> dict:
+    screen = window_rect(driver)
+    width = screen.get("width", 430)
+    height = screen.get("height", 932)
     bounds = {
-        "script_top": 210,
-        "script_bottom": 390,
+        "script_top": int(height * 0.225),
+        "script_bottom": int(height * 0.42),
         "script_card": None,
     }
+    section_heading_min_y = height * 0.19
     headings = driver.find_elements(
         By.XPATH,
         "//*[@name='剧本' or @label='剧本' or @value='剧本' "
@@ -455,13 +612,16 @@ def get_search_section_bounds(driver: webdriver.Remote) -> dict:
     script_heading_y = None
     next_heading_y = None
     for heading in headings:
-        label = heading.get_attribute("name") or heading.get_attribute("label") or heading.get_attribute("value")
-        rect = heading.rect
-        y = rect.get("y", 0)
-        # y < 180 is the top tab row. y >= 180 is the actual result section heading.
-        if label == "剧本" and y >= 180:
+        try:
+            label = heading.get_attribute("name") or heading.get_attribute("label") or heading.get_attribute("value")
+            rect = heading.rect
+            y = rect.get("y", 0)
+        except WebDriverException:
+            continue
+        # Ignore the top tab row; keep only actual result-section headings.
+        if label == "剧本" and y >= section_heading_min_y:
             script_heading_y = y if script_heading_y is None else min(script_heading_y, y)
-        if label in {"用户", "店铺", "发行"} and y >= 180:
+        if label in {"用户", "店铺", "发行"} and y >= section_heading_min_y:
             next_heading_y = y if next_heading_y is None else min(next_heading_y, y)
 
     if script_heading_y is not None:
@@ -469,9 +629,9 @@ def get_search_section_bounds(driver: webdriver.Remote) -> dict:
     if next_heading_y is not None:
         bounds["script_bottom"] = next_heading_y - 10
     bounds["script_card"] = {
-        "x": 25,
+        "x": int(width * 0.06),
         "y": bounds["script_top"] + 20,
-        "width": 390,
+        "width": int(width * 0.88),
         "height": max(80, bounds["script_bottom"] - bounds["script_top"] - 30),
     }
     return bounds
@@ -487,13 +647,32 @@ def xpath_literal(value: str) -> str:
 
 
 def parse_summary(source: str, query: str) -> ScriptSummary:
-    texts = all_texts(parse_xml(source))
+    root = parse_xml(source)
+    return parse_summary_entries(text_entries(root), query=query)
+
+
+def read_rating_summary(driver: webdriver.Remote, query: str) -> ScriptSummary:
+    return parse_summary(get_page_source(driver), query=query)
+
+
+def parse_summary_entries(entries: list[dict], query: str) -> ScriptSummary:
+    texts = [entry["text"] for entry in entries]
     summary = ScriptSummary(query=query)
+    title_candidates = [
+        entry
+        for entry in entries
+        if entry["visible"]
+        and 80 <= entry["y"] <= 190
+        and entry["x"] >= 80
+        and looks_like_script_title(entry["text"])
+    ]
+    if title_candidates:
+        summary.script_title = sorted(title_candidates, key=lambda entry: (entry["y"], entry["x"]))[0]["text"]
 
     for text in texts:
         if not summary.script_title and looks_like_script_title(text):
             summary.script_title = text
-        if re.fullmatch(r"\d+(?:\.\d+)?", text) and not summary.overall_rating:
+        if is_rating_score(text) and not summary.overall_rating:
             # On the detail page this is usually 8.6 near the rating block.
             summary.overall_rating = text
         if "男" in text and "女" in text and "小时" in text:
@@ -509,8 +688,16 @@ def parse_summary(source: str, query: str) -> ScriptSummary:
         if "人点评" in text:
             summary.review_count = text
 
-    summary_scope_end = next((i for i, text in enumerate(texts) if text == "剧情简介"), min(len(texts), 120))
-    score_pairs = extract_score_pairs(texts[: summary_scope_end + 1])
+    summary_scope_end = next((i for i, entry in enumerate(entries) if entry["text"] == "剧情简介"), min(len(entries), 120))
+    summary_entries = entries[: summary_scope_end + 1]
+    overall_candidates = [
+        entry["text"]
+        for entry in summary_entries
+        if is_rating_score(entry["text"]) and entry["x"] <= 140 and 260 <= entry["y"] <= 350
+    ]
+    if overall_candidates:
+        summary.overall_rating = overall_candidates[0]
+    score_pairs = extract_score_pairs_from_entries(summary_entries)
     summary.dimension_scores = format_score_pairs(score_pairs)
     summary.plot_score = score_for_label(score_pairs, "剧情")
     summary.restore_score = score_for_label(score_pairs, "还原") or score_for_label(score_pairs, "情感")
@@ -562,6 +749,12 @@ def next_score_after_label(texts: list[str], label: str) -> str:
 
 def is_score_text(text: str) -> bool:
     return bool(re.fullmatch(r"\d+(?:\.\d+)?", text))
+
+
+def is_rating_score(text: str) -> bool:
+    if not is_score_text(text):
+        return False
+    return 0 <= float(text) <= 10
 
 
 def extract_score_pairs(texts: list[str]) -> list[tuple[str, str]]:
@@ -650,16 +843,24 @@ def scroll_down(driver: webdriver.Remote) -> None:
     try:
         driver.execute_script("mobile: scroll", {"direction": "down"})
     except WebDriverException:
+        start = relative_point(driver, 0.5, 0.84)
+        end = relative_point(driver, 0.5, 0.28)
         driver.execute_script(
             "mobile: dragFromToForDuration",
-            {"duration": 0.5, "fromX": 215, "fromY": 780, "toX": 215, "toY": 260},
+            {
+                "duration": 0.5,
+                "fromX": start["x"],
+                "fromY": start["y"],
+                "toX": end["x"],
+                "toY": end["y"],
+            },
         )
     time.sleep(1.0)
 
 
 def scroll_until_reviews(driver: webdriver.Remote, max_scrolls: int = 8) -> None:
     for _ in range(max_scrolls):
-        source = driver.page_source
+        source = get_page_source(driver)
         if "用户评价" in source:
             return
         scroll_down(driver)
@@ -672,7 +873,7 @@ def is_all_reviews_page(source: str) -> bool:
 
 def open_all_reviews_page(driver: webdriver.Remote, debug_dir: Path | None, query: str) -> bool:
     """Open the dedicated full-review list for the current script if possible."""
-    if is_all_reviews_page(driver.page_source):
+    if is_all_reviews_page(get_page_source(driver)):
         return True
 
     if tap_if_present(
@@ -681,7 +882,7 @@ def open_all_reviews_page(driver: webdriver.Remote, debug_dir: Path | None, quer
         timeout=1,
     ):
         time.sleep(1.5)
-        if is_all_reviews_page(driver.page_source):
+        if is_all_reviews_page(get_page_source(driver)):
             return True
 
     try:
@@ -690,11 +891,11 @@ def open_all_reviews_page(driver: webdriver.Remote, debug_dir: Path | None, quer
         pass
     if tap_text_matching(driver, "全部", min_x=300, min_y=240):
         time.sleep(1.5)
-        if is_all_reviews_page(driver.page_source):
+        if is_all_reviews_page(get_page_source(driver)):
             return True
 
     dump_debug_snapshot(driver, debug_dir, f"open_all_reviews_failed_{query}")
-    return is_all_reviews_page(driver.page_source)
+    return is_all_reviews_page(get_page_source(driver))
 
 
 def review_cells(root: ET.Element) -> Iterable[ET.Element]:
@@ -811,7 +1012,7 @@ def expand_review_text(driver: webdriver.Remote, cell: ET.Element, row: ReviewRo
         },
     )
     time.sleep(1.2)
-    source = driver.page_source
+    source = get_page_source(driver)
     expanded = choose_expanded_review_text(source, row)
     if expanded and len(expanded) > len(row.review_text):
         row.review_text = expanded
@@ -926,9 +1127,10 @@ def collect_reviews(
         scroll_until_reviews(driver)
 
     for scroll_index in range(max_scrolls):
-        root = parse_xml(driver.page_source)
+        source = get_page_source(driver)
+        root = parse_xml(source)
         for cell in review_cells(root):
-            if is_all_reviews_page(driver.page_source) and not is_visible_review_cell(cell):
+            if is_all_reviews_page(source) and not is_visible_review_cell(cell):
                 continue
             row = parse_review_cell(cell, summary, scroll_index)
             if not row:
@@ -952,15 +1154,110 @@ def read_queries(path: Path) -> list[str]:
         return [row["query"].strip() for row in reader if row.get("query", "").strip()]
 
 
+def read_existing_ratings(path: Path) -> list[ScriptSummary]:
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8-sig") as handle:
+        reader = csv.DictReader(handle)
+        return [rating_row_to_summary(row) for row in reader if row.get("query", "").strip()]
+
+
+def debug_failed_query_keys(debug_dir: Path | None) -> set[str]:
+    if debug_dir is None or not debug_dir.exists():
+        return set()
+    prefixes = ("open_result_failed_", "title_mismatch_", "error_")
+    keys: set[str] = set()
+    for path in debug_dir.iterdir():
+        if not path.is_file():
+            continue
+        stem = path.stem
+        for prefix in prefixes:
+            if stem.startswith(prefix):
+                keys.add(stem[len(prefix) :])
+                break
+    return keys
+
+
+def rating_row_to_summary(row: dict[str, str]) -> ScriptSummary:
+    score_pairs = [
+        (label, row.get(label, "").strip())
+        for label in DIMENSION_COLUMNS
+        if row.get(label, "").strip() not in {"", "0", "0.0"}
+    ]
+    return ScriptSummary(
+        query=row.get("query", "").strip(),
+        script_title=row.get("script_title", "").strip(),
+        overall_rating=row.get("overall_rating", "").strip(),
+        plot_score=row.get("剧情", "").strip(),
+        restore_score=(row.get("还原", "").strip() or row.get("情感", "").strip()),
+        gameplay_score=(row.get("玩法", "").strip() or row.get("机制", "").strip()),
+        dimension_scores=format_score_pairs(score_pairs),
+        want_count=row.get("want_count", "").strip(),
+        played_count=row.get("played_count", "").strip(),
+        review_count=row.get("review_count", "").strip(),
+        publishers=row.get("publishers", "").strip(),
+        metadata=row.get("metadata", "").strip(),
+        tags=row.get("tags", "").strip(),
+    )
+
+
+def parse_dimension_scores(value: str) -> dict[str, str]:
+    scores: dict[str, str] = {}
+    for part in value.split(";"):
+        if ":" not in part:
+            continue
+        label, score = part.split(":", 1)
+        label = label.strip()
+        score = score.strip()
+        if label in DIMENSION_LABELS and is_rating_score(score):
+            scores[label] = score
+    return scores
+
+
+def numeric_count(value: str) -> str:
+    match = re.search(r"[\d.]+", value or "")
+    if not match:
+        return "0"
+    number = match.group(0)
+    return number[:-2] if number.endswith(".0") else number
+
+
+def clean_publishers(value: str) -> str:
+    publishers = []
+    for part in (value or "").split(";"):
+        publisher = re.sub(r"^发行[:：]\s*", "", part.strip())
+        if publisher:
+            publishers.append(publisher)
+    return "; ".join(publishers)
+
+
+def script_summary_dict(row: ScriptSummary) -> dict[str, str]:
+    dimension_scores = parse_dimension_scores(row.dimension_scores)
+    values = {
+        "query": row.query,
+        "script_title": row.script_title,
+        "overall_rating": row.overall_rating if is_rating_score(row.overall_rating) else "0",
+        "want_count": numeric_count(row.want_count),
+        "played_count": numeric_count(row.played_count),
+        "review_count": numeric_count(row.review_count),
+        "publishers": clean_publishers(row.publishers),
+        "metadata": row.metadata,
+        "tags": row.tags,
+    }
+    for label in DIMENSION_COLUMNS:
+        values[label] = dimension_scores.get(label, "0")
+    return values
+
+
 def write_rows(path: Path, rows: list) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     sample_class = rows[0].__class__ if rows else ReviewRow
-    fieldnames = [field.name for field in fields(sample_class)]
+    fieldnames = RATING_BASE_FIELDS if sample_class is ScriptSummary else [field.name for field in fields(sample_class)]
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
-            writer.writerow(row.__dict__)
+            writer.writerow(script_summary_dict(row) if isinstance(row, ScriptSummary) else row.__dict__)
 
 
 def flush_rows(path: Path, rows: list, row_class: type = ReviewRow) -> None:
@@ -969,7 +1266,7 @@ def flush_rows(path: Path, rows: list, row_class: type = ReviewRow) -> None:
         write_rows(tmp_path, rows)
     else:
         path.parent.mkdir(parents=True, exist_ok=True)
-        fieldnames = [field.name for field in fields(row_class)]
+        fieldnames = RATING_BASE_FIELDS if row_class is ScriptSummary else [field.name for field in fields(row_class)]
         with tmp_path.open("w", newline="", encoding="utf-8-sig") as handle:
             csv.DictWriter(handle, fieldnames=fieldnames).writeheader()
     os.replace(tmp_path, path)
@@ -984,13 +1281,38 @@ def scrape(
     reviews_per_script: int,
     limit: int | None,
     debug_dir: Path | None,
+    rerun_existing: bool,
 ) -> None:
     queries = read_queries(input_path)
     if limit is not None:
         queries = queries[:limit]
+    all_ratings: list[ScriptSummary] = []
+    if mode == "ratings" and not rerun_existing:
+        all_ratings = read_existing_ratings(ratings_output_path)
+        completed_queries = {row.query for row in all_ratings if row.query}
+        if completed_queries:
+            original_count = len(queries)
+            queries = [query for query in queries if query not in completed_queries]
+            print(
+                f"Loaded {len(completed_queries)} existing rating rows from {ratings_output_path}; "
+                f"skipping {original_count - len(queries)} completed queries."
+            )
+        failed_debug_keys = debug_failed_query_keys(debug_dir)
+        if failed_debug_keys:
+            original_count = len(queries)
+            queries = [query for query in queries if safe_name(query) not in failed_debug_keys]
+            skipped_count = original_count - len(queries)
+            if skipped_count:
+                print(
+                    f"Found {len(failed_debug_keys)} prior failed debug snapshots in {debug_dir}; "
+                    f"skipping {skipped_count} debugged queries."
+                )
+    if not queries:
+        flush_rows(ratings_output_path, all_ratings, ScriptSummary)
+        print(f"No pending rating queries. Ratings are saved in {ratings_output_path}")
+        return
     driver = make_driver()
     all_reviews: list[ReviewRow] = []
-    all_ratings: list[ScriptSummary] = []
     try:
         try:
             for query in queries:
@@ -999,11 +1321,23 @@ def scrape(
                     go_to_search(driver)
                     submit_search(driver, query)
                     if not open_first_script_result(driver, query, debug_dir=debug_dir):
+                        all_ratings.append(ScriptSummary(query=query))
                         if mode in {"reviews", "both"}:
                             flush_rows(reviews_output_path, all_reviews, ReviewRow)
                         flush_rows(ratings_output_path, all_ratings, ScriptSummary)
                         continue
-                    summary = parse_summary(driver.page_source, query=query)
+                    summary = read_rating_summary(driver, query=query)
+                    if not is_exact_title_match(summary.script_title, query):
+                        print(
+                            f"  skipped {query}: opened {summary.script_title or 'unknown title'}, "
+                            "which is not an exact title match"
+                        )
+                        dump_debug_snapshot(driver, debug_dir, f"title_mismatch_{query}")
+                        all_ratings.append(ScriptSummary(query=query))
+                        if mode in {"reviews", "both"}:
+                            flush_rows(reviews_output_path, all_reviews, ReviewRow)
+                        flush_rows(ratings_output_path, all_ratings, ScriptSummary)
+                        continue
                     all_ratings.append(summary)
                     rows: list[ReviewRow] = []
                     if mode in {"reviews", "both"}:
@@ -1030,11 +1364,19 @@ def scrape(
                 except Exception as exc:
                     dump_debug_snapshot(driver, debug_dir, f"error_{query}")
                     print(f"  skipped {query}: {exc}")
+                    if is_app_not_running_error(exc) or is_page_source_error(exc):
+                        print("  Appium could not read the current screen; relaunching 谜圈 before continuing.")
+                        relaunch_app(driver)
                     if mode in {"reviews", "both"}:
                         flush_rows(reviews_output_path, all_reviews, ReviewRow)
                     flush_rows(ratings_output_path, all_ratings, ScriptSummary)
                 finally:
-                    return_to_search_results(driver, debug_dir, query)
+                    try:
+                        if not return_to_search_results(driver, debug_dir, query):
+                            relaunch_app(driver)
+                    except Exception as cleanup_exc:
+                        print(f"  cleanup after {query} failed: {cleanup_exc}")
+                        relaunch_app(driver)
         except KeyboardInterrupt:
             if mode in {"reviews", "both"}:
                 flush_rows(reviews_output_path, all_reviews, ReviewRow)
@@ -1063,9 +1405,9 @@ def scrape(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", type=Path, default=Path("miquan_appium/search_terms.csv"))
-    parser.add_argument("--output", type=Path, default=Path("miquan_appium/miquan_reviews.csv"))
-    parser.add_argument("--ratings-output", type=Path, default=Path("miquan_appium/miquan_ratings.csv"))
+    parser.add_argument("--input", type=Path, default=SCRIPT_DIR / "search_terms.csv")
+    parser.add_argument("--output", type=Path, default=SCRIPT_DIR / "miquan_reviews.csv")
+    parser.add_argument("--ratings-output", type=Path, default=SCRIPT_DIR / "miquan_ratings.csv")
     parser.add_argument(
         "--mode",
         choices=("ratings", "reviews", "both"),
@@ -1076,9 +1418,14 @@ def main() -> None:
     parser.add_argument("--reviews-per-script", type=int, default=10)
     parser.add_argument("--limit", type=int, default=None, help="Only process the first N search terms.")
     parser.add_argument(
+        "--rerun-existing",
+        action="store_true",
+        help="Ignore existing ratings rows and scrape every query again.",
+    )
+    parser.add_argument(
         "--debug-dir",
         type=Path,
-        default=Path("miquan_appium/debug"),
+        default=SCRIPT_DIR / "debug",
         help="Where to save source/screenshot snapshots for failed result opens.",
     )
     args = parser.parse_args()
@@ -1091,8 +1438,12 @@ def main() -> None:
         args.reviews_per_script,
         args.limit,
         args.debug_dir,
+        args.rerun_existing,
     )
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except RuntimeError as exc:
+        raise SystemExit(str(exc)) from None

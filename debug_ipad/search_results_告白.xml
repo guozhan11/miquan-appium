@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="谜圈" label="谜圈" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="" processId="2457" bundleId="com.juhaowan123.www">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="47" width="390" height="44" index="0" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="16" y="52" width="314" height="34" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" name="home_top_search" enabled="true" visible="true" accessible="false" x="32" y="61" width="15" height="16" index="0" traits="Image"/>
+                            <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="告白" label="" enabled="true" visible="true" accessible="true" x="52" y="52" width="248" height="34" index="1" placeholderValue=" 搜索剧本 发行 店铺 组局 用户" traits=""/>
+                            <XCUIElementTypeButton type="XCUIElementTypeButton" name="sys clear icon" label="sys clear icon" enabled="true" visible="true" accessible="true" x="300" y="54" width="30" height="30" index="2" traits="Button"/>
+                          </XCUIElementTypeOther>
+                          <XCUIElementTypeButton type="XCUIElementTypeButton" name="取消" label="取消" enabled="true" visible="true" accessible="true" x="330" y="47" width="60" height="44" index="1" traits="Button">
+                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="取消" name="取消" label="取消" enabled="true" visible="true" accessible="false" x="346" y="59" width="28" height="20" index="0" traits="StaticText"/>
+                          </XCUIElementTypeButton>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="Image"/>
+                            <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="全部" label="全部" enabled="true" visible="true" accessible="true" x="12" y="88" width="30" height="44" index="0" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="全部" name="全部" label="全部" enabled="true" visible="true" accessible="false" x="12" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="剧本" label="剧本" enabled="true" visible="true" accessible="true" x="66" y="88" width="32" height="44" index="1" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="剧本" name="剧本" label="剧本" enabled="true" visible="true" accessible="false" x="66" y="98" width="32" height="24" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="true" x="122" y="88" width="30" height="44" index="2" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="兴趣" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="false" x="122" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="店铺" label="店铺" enabled="true" visible="true" accessible="true" x="176" y="88" width="30" height="44" index="3" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="店铺" name="店铺" label="店铺" enabled="true" visible="true" accessible="false" x="176" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="组局" label="组局" enabled="true" visible="true" accessible="true" x="230" y="88" width="30" height="44" index="4" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="组局" name="组局" label="组局" enabled="true" visible="true" accessible="false" x="230" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="用户" label="用户" enabled="true" visible="true" accessible="true" x="284" y="88" width="30" height="44" index="5" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="用户" name="用户" label="用户" enabled="true" visible="true" accessible="false" x="284" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="发行" label="发行" enabled="true" visible="true" accessible="true" x="338" y="88" width="30" height="44" index="6" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="发行" name="发行" label="发行" enabled="true" visible="true" accessible="false" x="338" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="74" y="123" width="16" height="3" index="7" traits="Image"/>
+                            </XCUIElementTypeScrollView>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="2" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="0" traits="">
+                            <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="678" index="0" traits="">
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="147" width="390" height="0" index="0" traits=""/>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="147" width="390" height="202" index="1" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="起先，你觉得只要冬天来临蝴蝶就会长出结冰的翅膀一旦海潮退却便能看到粉色的小马而那云朵里一定散发着栗子的芳香后来，你发现其实那些被时光惦记的宝藏都藏在所有与纸墨邂逅的清晨和每个充满蝉鸣的初夏而直到最后你才明白原来只要到达海的尽头云的彼端就能遇见，梦开始的地方。" name="起先，你觉得只要冬天来临蝴蝶就会长出结冰的翅膀一旦海潮退却便能看到粉色的小马而那云朵里一定散发着栗子的芳香后来，你发现其实那些被时光惦记的宝藏都藏在所有与纸墨邂逅的清晨和每个充满蝉鸣的初夏而直到最后你才明白原来只要到达海的尽头云的彼端就能遇见，梦开始的地方。" label="起先，你觉得只要冬天来临蝴蝶就会长出结冰的翅膀一旦海潮退却便能看到粉色的小马而那云朵里一定散发着栗子的芳香后来，你发现其实那些被时光惦记的宝藏都藏在所有与纸墨邂逅的清晨和每个充满蝉鸣的初夏而直到最后你才明白原来只要到达海的尽头云的彼端就能遇见，梦开始的地方。" enabled="true" visible="true" accessible="true" x="116" y="246" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="告白诗" name="告白诗" label="告白诗" enabled="true" visible="true" accessible="true" x="168" y="162" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城34家店铺可玩" name="同城34家店铺可玩" label="同城34家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="285" width="99" height="17" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城12个省钱团购，低至¥40起" name="同城12个省钱团购，低至¥40起" label="同城12个省钱团购，低至¥40起" enabled="true" visible="true" accessible="true" x="67" y="308" width="167" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="252" width="36" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="8" y="345" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 情感 沉浸 新手" name="中式 情感 沉浸 新手" label="中式 情感 沉浸 新手" enabled="true" visible="true" accessible="true" x="116" y="187" width="250" height="17" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="349" width="390" height="202" index="2" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 情感 沉浸 高阶" name="中式 情感 沉浸 高阶" label="中式 情感 沉浸 高阶" enabled="true" visible="true" accessible="true" x="116" y="389" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="似曾相识的六个人，从朦胧的意识中苏醒。你们发现眼前是一个光线昏暗的空房间，大家围着一张古怪的圆桌坐着，每人面前还放着三根有字的奇怪火柴，也不知干什么用的。你们发现这个房间居然没有门，而只有两扇并排的巨大黑色窗户。而窗外无边无际的黑暗中，一个高大得不成比例的人正死死盯着你们。你们不知道，接下来等着你们的是一场阴谋还是救赎···" name="似曾相识的六个人，从朦胧的意识中苏醒。你们发现眼前是一个光线昏暗的空房间，大家围着一张古怪的圆桌坐着，每人面前还放着三根有字的奇怪火柴，也不知干什么用的。你们发现这个房间居然没有门，而只有两扇并排的巨大黑色窗户。而窗外无边无际的黑暗中，一个高大得不成比例的人正死死盯着你们。你们不知道，接下来等着你们的是一场阴谋还是救赎···" label="似曾相识的六个人，从朦胧的意识中苏醒。你们发现眼前是一个光线昏暗的空房间，大家围着一张古怪的圆桌坐着，每人面前还放着三根有字的奇怪火柴，也不知干什么用的。你们发现这个房间居然没有门，而只有两扇并排的巨大黑色窗户。而窗外无边无际的黑暗中，一个高大得不成比例的人正死死盯着你们。你们不知道，接下来等着你们的是一场阴谋还是救赎···" enabled="true" visible="true" accessible="true" x="116" y="448" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.6分" name="6.6分" label="6.6分" enabled="true" visible="true" accessible="true" x="188" y="417" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城5家店铺可玩" name="同城5家店铺可玩" label="同城5家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="487" width="92" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城4个省钱团购，低至¥78起" name="同城4个省钱团购，低至¥78起" label="同城4个省钱团购，低至¥78起" enabled="true" visible="true" accessible="true" x="67" y="510" width="161" height="17" index="4" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="454" width="36" height="14" index="5" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="349" width="390" height="202" index="6" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="349" width="390" height="202" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="8" y="547" width="420" height="1" index="7" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="漫长的告白" name="漫长的告白" label="漫长的告白" enabled="true" visible="true" accessible="true" x="116" y="364" width="250" height="21" index="8" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="551" width="390" height="146" index="3" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 还原 悬疑 高阶" name="架空 还原 悬疑 高阶" label="架空 还原 悬疑 高阶" enabled="true" visible="true" accessible="true" x="116" y="591" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="他被冠以意外之名，长眠于源香山废弃教堂之中，对所有与这起事件有关的人而言，所有那些与他有关的记忆，就像一道永远无法解除的诅咒，无论时间过了多久，当往事再次被提及，思绪便会不由自主的往记忆深处蔓延，直至将那道本就无法愈合的伤疤再次被揭开，溅出仍旧鲜红无比的血液，耳边会再度响起那段从未消失过的声音，它催促着，提醒着，是时候去寻找重重迷雾中的真相了。......墓碑前，我俯身而下，献出一束洁白无暇的夕颜花，这一刻，所有的罪恶都将迎来审判，我也将完成一场跨越时空的告白。" name="他被冠以意外之名，长眠于源香山废弃教堂之中，对所有与这起事件有关的人而言，所有那些与他有关的记忆，就像一道永远无法解除的诅咒，无论时间过了多久，当往事再次被提及，思绪便会不由自主的往记忆深处蔓延，直至将那道本就无法愈合的伤疤再次被揭开，溅出仍旧鲜红无比的血液，耳边会再度响起那段从未消失过的声音，它催促着，提醒着，是时候去寻找重重迷雾中的真相了。......墓碑前，我俯身而下，献出一束洁白无暇的夕颜花，这一刻，所有的罪恶都将迎来审判，我也将完成一场跨越时空的告白。" label="他被冠以意外之名，长眠于源香山废弃教堂之中，对所有与这起事件有关的人而言，所有那些与他有关的记忆，就像一道永远无法解除的诅咒，无论时间过了多久，当往事再次被提及，思绪便会不由自主的往记忆深处蔓延，直至将那道本就无法愈合的伤疤再次被揭开，溅出仍旧鲜红无比的血液，耳边会再度响起那段从未消失过的声音，它催促着，提醒着，是时候去寻找重重迷雾中的真相了。......墓碑前，我俯身而下，献出一束洁白无暇的夕颜花，这一刻，所有的罪恶都将迎来审判，我也将完成一场跨越时空的告白。" enabled="true" visible="true" accessible="true" x="116" y="650" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.7分" name="6.7分" label="6.7分" enabled="true" visible="true" accessible="true" x="188" y="619" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="656" width="36" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="551" width="390" height="146" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="551" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="749" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="夕颜的告白" name="夕颜的告白" label="夕颜的告白" enabled="true" visible="true" accessible="true" x="116" y="566" width="250" height="21" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="697" width="390" height="146" index="4" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 情感 沉浸 新手" name="中式 情感 沉浸 新手" label="中式 情感 沉浸 新手" enabled="true" visible="true" accessible="true" x="116" y="737" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="或许，人生真就是一块块告白和一段段告别拼凑的…告白，是甜蜜的，像落在你发间而对我有了独特意义的那朵花瓣；像双手环住你的腰身传来温热的安全感；还有那一句…“我喜欢你。”“…我也喜欢你。”告别，是苦涩的，或许会是刀光剑影，直抵心田的惨烈；或许会是彼此安好，默不作声的离去；那之后，想念化作诗句，名字刻入心底。如果，你还在…如果，你还愿意…我爱你。" name="或许，人生真就是一块块告白和一段段告别拼凑的…告白，是甜蜜的，像落在你发间而对我有了独特意义的那朵花瓣；像双手环住你的腰身传来温热的安全感；还有那一句…“我喜欢你。”“…我也喜欢你。”告别，是苦涩的，或许会是刀光剑影，直抵心田的惨烈；或许会是彼此安好，默不作声的离去；那之后，想念化作诗句，名字刻入心底。如果，你还在…如果，你还愿意…我爱你。" label="或许，人生真就是一块块告白和一段段告别拼凑的…告白，是甜蜜的，像落在你发间而对我有了独特意义的那朵花瓣；像双手环住你的腰身传来温热的安全感；还有那一句…“我喜欢你。”“…我也喜欢你。”告别，是苦涩的，或许会是刀光剑影，直抵心田的惨烈；或许会是彼此安好，默不作声的离去；那之后，想念化作诗句，名字刻入心底。如果，你还在…如果，你还愿意…我爱你。" enabled="true" visible="true" accessible="true" x="116" y="796" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.3分" name="6.3分" label="6.3分" enabled="true" visible="true" accessible="true" x="188" y="765" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="802" width="36" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="697" width="390" height="146" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="697" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="895" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="《告白》" name="《告白》" label="《告白》" enabled="true" visible="true" accessible="true" x="116" y="712" width="250" height="21" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="843" width="390" height="146" index="5" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 情感 演绎 进阶" name="中式 情感 演绎 进阶" label="中式 情感 演绎 进阶" enabled="true" visible="false" accessible="true" x="116" y="883" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="岁月迤通前行，光阴不复重来，爱的人渐远渐行工只是若能回到过去，你是否能让那指间上散去的时光不再遗憾.." name="岁月迤通前行，光阴不复重来，爱的人渐远渐行工只是若能回到过去，你是否能让那指间上散去的时光不再遗憾.." label="岁月迤通前行，光阴不复重来，爱的人渐远渐行工只是若能回到过去，你是否能让那指间上散去的时光不再遗憾.." enabled="true" visible="false" accessible="true" x="116" y="942" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="29" y="948" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="843" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="843" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="1041" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="陪伴是最长情的告白" name="陪伴是最长情的告白" label="陪伴是最长情的告白" enabled="true" visible="false" accessible="true" x="116" y="858" width="250" height="21" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="989" width="390" height="146" index="6" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 机制 欢乐 新手" name="中式 机制 欢乐 新手" label="中式 机制 欢乐 新手" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="RIOTALK最后一次告白" name="RIOTALK最后一次告白" label="RIOTALK最后一次告白" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="“我隔着冰炬看向你，或粉或蓝或橙，就像小时候诱惑我的糖罐，总好奇这些漂亮的颜色是什么味道。我把你倒进杯子里，把心里的思绪装进空瓶子里，或许这一刻只有你足够懂我。”这次你会向谁告白？他、她？亦或是自己？" name="“我隔着冰炬看向你，或粉或蓝或橙，就像小时候诱惑我的糖罐，总好奇这些漂亮的颜色是什么味道。我把你倒进杯子里，把心里的思绪装进空瓶子里，或许这一刻只有你足够懂我。”这次你会向谁告白？他、她？亦或是自己？" label="“我隔着冰炬看向你，或粉或蓝或橙，就像小时候诱惑我的糖罐，总好奇这些漂亮的颜色是什么味道。我把你倒进杯子里，把心里的思绪装进空瓶子里，或许这一刻只有你足够懂我。”这次你会向谁告白？他、她？亦或是自己？" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1135" width="390" height="146" index="7" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="日式 推理 悬疑 高阶" name="日式 推理 悬疑 高阶" label="日式 推理 悬疑 高阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="在登别地狱谷的告白" name="在登别地狱谷的告白" label="在登别地狱谷的告白" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="北海道的雪，一如既往的温和宜人。昭和天皇的离世，开启了平成年代。少年们步入了时代交替的黑暗中，道义和情感化作腐朽，现实与利益已成为附骨之疽。拥有者“地狱”盛名的登别地狱谷，青年们赴约而来。温泉别墅内，翌日莫名多出了两具戴着头套的尸体，恐慌交织着不安的情绪逐渐蔓延，无休止地争论只为揭开真相的迷雾，这之间又会存在着某种联系吗？若是将这极其不自然的行为赋予了意义，那么将会诞生出完全不同的答案，诚意化作恶意，真相变为假象，无意义的事似乎也会诞生出某种意义。" name="北海道的雪，一如既往的温和宜人。昭和天皇的离世，开启了平成年代。少年们步入了时代交替的黑暗中，道义和情感化作腐朽，现实与利益已成为附骨之疽。拥有者“地狱”盛名的登别地狱谷，青年们赴约而来。温泉别墅内，翌日莫名多出了两具戴着头套的尸体，恐慌交织着不安的情绪逐渐蔓延，无休止地争论只为揭开真相的迷雾，这之间又会存在着某种联系吗？若是将这极其不自然的行为赋予了意义，那么将会诞生出完全不同的答案，诚意化作恶意，真相变为假象，无意义的事似乎也会诞生出某种意义。" label="北海道的雪，一如既往的温和宜人。昭和天皇的离世，开启了平成年代。少年们步入了时代交替的黑暗中，道义和情感化作腐朽，现实与利益已成为附骨之疽。拥有者“地狱”盛名的登别地狱谷，青年们赴约而来。温泉别墅内，翌日莫名多出了两具戴着头套的尸体，恐慌交织着不安的情绪逐渐蔓延，无休止地争论只为揭开真相的迷雾，这之间又会存在着某种联系吗？若是将这极其不自然的行为赋予了意义，那么将会诞生出完全不同的答案，诚意化作恶意，真相变为假象，无意义的事似乎也会诞生出某种意义。" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1281" width="390" height="146" index="8" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 情感 演绎 进阶" name="架空 情感 演绎 进阶" label="架空 情感 演绎 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="告白" name="告白" label="告白" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="夕阳未遂，朝阳未升。傍晚是一天中昼夜交替的时刻，光芒与黑暗以地平线为界进行交接，一瞬之间，人们会看到两者同时存在，如人性的正与邪之中，总会存在捉摸不定的灰暗地带。各自为营的罗生门，真假难辨的行凶者...环环相扣的诡计背后，究竟着什么不可告人的难言之隐?审判来临之际，是作为正常人与这个糟糕透顶的世界假意言和，还是永远地沉浸在虚幻的美好中了却残生?“这是一个，由谎言拼凑出的真相。”" name="夕阳未遂，朝阳未升。傍晚是一天中昼夜交替的时刻，光芒与黑暗以地平线为界进行交接，一瞬之间，人们会看到两者同时存在，如人性的正与邪之中，总会存在捉摸不定的灰暗地带。各自为营的罗生门，真假难辨的行凶者...环环相扣的诡计背后，究竟着什么不可告人的难言之隐?审判来临之际，是作为正常人与这个糟糕透顶的世界假意言和，还是永远地沉浸在虚幻的美好中了却残生?“这是一个，由谎言拼凑出的真相。”" label="夕阳未遂，朝阳未升。傍晚是一天中昼夜交替的时刻，光芒与黑暗以地平线为界进行交接，一瞬之间，人们会看到两者同时存在，如人性的正与邪之中，总会存在捉摸不定的灰暗地带。各自为营的罗生门，真假难辨的行凶者...环环相扣的诡计背后，究竟着什么不可告人的难言之隐?审判来临之际，是作为正常人与这个糟糕透顶的世界假意言和，还是永远地沉浸在虚幻的美好中了却残生?“这是一个，由谎言拼凑出的真相。”" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="810" width="390" height="0" index="9" traits=""/>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="水平滚动条, 1页" label="水平滚动条, 1页" enabled="true" visible="false" accessible="false" x="0" y="777" width="390" height="30" index="10" traits="Adjustable">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="3" y="804" width="381" height="3" index="0" traits=""/>
+                              </XCUIElementTypeOther>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="No more data" name="No more data" label="No more data" enabled="true" visible="false" accessible="true" x="0" y="1427" width="390" height="44" index="11" traits="StaticText"/>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Pull down to refresh" name="Pull down to refresh" label="Pull down to refresh" enabled="true" visible="false" accessible="true" x="0" y="78" width="390" height="54" index="12" traits="StaticText"/>
+                            </XCUIElementTypeTable>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeScrollView>
+                      </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="toplogowhite" enabled="true" visible="false" accessible="false" x="173" y="10" width="44" height="16" index="1" traits="Image"/>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="1" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits=""/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

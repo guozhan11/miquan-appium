@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="谜圈" label="谜圈" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="" processId="3768" bundleId="com.juhaowan123.www">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="47" width="390" height="44" index="0" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="16" y="52" width="314" height="34" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" name="home_top_search" enabled="true" visible="true" accessible="false" x="32" y="61" width="15" height="16" index="0" traits="Image"/>
+                            <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="无上" label="" enabled="true" visible="true" accessible="true" x="52" y="52" width="248" height="34" index="1" placeholderValue=" 搜索剧本 发行 店铺 组局 用户" traits=""/>
+                            <XCUIElementTypeButton type="XCUIElementTypeButton" name="sys clear icon" label="sys clear icon" enabled="true" visible="true" accessible="true" x="300" y="54" width="30" height="30" index="2" traits="Button"/>
+                          </XCUIElementTypeOther>
+                          <XCUIElementTypeButton type="XCUIElementTypeButton" name="取消" label="取消" enabled="true" visible="true" accessible="true" x="330" y="47" width="60" height="44" index="1" traits="Button">
+                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="取消" name="取消" label="取消" enabled="true" visible="true" accessible="false" x="346" y="59" width="28" height="20" index="0" traits="StaticText"/>
+                          </XCUIElementTypeButton>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="Image"/>
+                            <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="全部" label="全部" enabled="true" visible="true" accessible="true" x="12" y="88" width="30" height="44" index="0" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="全部" name="全部" label="全部" enabled="true" visible="true" accessible="false" x="12" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="剧本" label="剧本" enabled="true" visible="true" accessible="true" x="66" y="88" width="32" height="44" index="1" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="剧本" name="剧本" label="剧本" enabled="true" visible="true" accessible="false" x="66" y="98" width="32" height="24" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="true" x="122" y="88" width="30" height="44" index="2" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="兴趣" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="false" x="122" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="店铺" label="店铺" enabled="true" visible="true" accessible="true" x="176" y="88" width="30" height="44" index="3" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="店铺" name="店铺" label="店铺" enabled="true" visible="true" accessible="false" x="176" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="组局" label="组局" enabled="true" visible="true" accessible="true" x="230" y="88" width="30" height="44" index="4" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="组局" name="组局" label="组局" enabled="true" visible="true" accessible="false" x="230" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="用户" label="用户" enabled="true" visible="true" accessible="true" x="284" y="88" width="30" height="44" index="5" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="用户" name="用户" label="用户" enabled="true" visible="true" accessible="false" x="284" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="发行" label="发行" enabled="true" visible="true" accessible="true" x="338" y="88" width="30" height="44" index="6" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="发行" name="发行" label="发行" enabled="true" visible="true" accessible="false" x="338" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="74" y="123" width="16" height="3" index="7" traits="Image"/>
+                            </XCUIElementTypeScrollView>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="2" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="0" traits="">
+                            <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="678" index="0" traits="">
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="147" width="390" height="0" index="0" traits=""/>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="147" width="390" height="175" index="1" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="洞天大陆，实力为尊，人类修炼灵力让自身变强。上古有六皇，威名震八方，无人敢挑衅其权威。直至一名布衣少年，从蛮荒之地走出。他相貌普通，但却实力超群，战无不胜。远古六大家族对少年发起围剿，未曾想这少年以战证道，以传说中的帝阶实力力压六皇一战成名，少年也因此被尊为战帝。战帝登基后，天下一统，六大家族被封为六侯，与战帝共掌天下。战帝开创洞天书院，招贤纳士，从此国泰民安。一百年后，天色大变，洞天大陆突然被一股黑雾笼罩——魔神降世。魔神在世间肆虐，一时间天下生灵涂炭。战帝率六侯与其精锐亲征，誓要将魔神一举歼灭。此战历时九天九夜，直杀得天昏地暗，日月无光。终于消息传来，魔神已死，但凯旋而归的队伍中却未见战帝身影。六侯之首魂侯宣布，战帝与魔神同归于尽，炎，赵，钱三大武侯也一同殉难。宣布完便立即与其他幸存的武侯闭关清修，六大远古家族元气大伤。消息一出，各大势力蠢蠢欲动，然而洞天书院以雷霆手段扫清各种异动，重新整合了洞天大陆，自此大陆开始以洞天书院为尊。洞天历五十年十月初一。洞天书院宣布比武大会即将开始，天下高手一决雌雄。若是能取得名次将会获得丰厚的奖励。" name="洞天大陆，实力为尊，人类修炼灵力让自身变强。上古有六皇，威名震八方，无人敢挑衅其权威。直至一名布衣少年，从蛮荒之地走出。他相貌普通，但却实力超群，战无不胜。远古六大家族对少年发起围剿，未曾想这少年以战证道，以传说中的帝阶实力力压六皇一战成名，少年也因此被尊为战帝。战帝登基后，天下一统，六大家族被封为六侯，与战帝共掌天下。战帝开创洞天书院，招贤纳士，从此国泰民安。一百年后，天色大变，洞天大陆突然被一股黑雾笼罩——魔神降世。魔神在世间肆虐，一时间天下生灵涂炭。战帝率六侯与其精锐亲征，誓要将魔神一举歼灭。此战历时九天九夜，直杀得天昏地暗，日月无光。终于消息传来，魔神已死，但凯旋而归的队伍中却未见战帝身影。六侯之首魂侯宣布，战帝与魔神同归于尽，炎，赵，钱三大武侯也一同殉难。宣布完便立即与其他幸存的武侯闭关清修，六大远古家族元气大伤。消息一出，各大势力蠢蠢欲动，然而洞天书院以雷霆手段扫清各种异动，重新整合了洞天大陆，自此大陆开始以洞天书院为尊。洞天历五十年十月初一。洞天书院宣布比武大会即将开始，天下高手一决雌雄。若是能取得名次将会获得丰厚的奖励。" label="洞天大陆，实力为尊，人类修炼灵力让自身变强。上古有六皇，威名震八方，无人敢挑衅其权威。直至一名布衣少年，从蛮荒之地走出。他相貌普通，但却实力超群，战无不胜。远古六大家族对少年发起围剿，未曾想这少年以战证道，以传说中的帝阶实力力压六皇一战成名，少年也因此被尊为战帝。战帝登基后，天下一统，六大家族被封为六侯，与战帝共掌天下。战帝开创洞天书院，招贤纳士，从此国泰民安。一百年后，天色大变，洞天大陆突然被一股黑雾笼罩——魔神降世。魔神在世间肆虐，一时间天下生灵涂炭。战帝率六侯与其精锐亲征，誓要将魔神一举歼灭。此战历时九天九夜，直杀得天昏地暗，日月无光。终于消息传来，魔神已死，但凯旋而归的队伍中却未见战帝身影。六侯之首魂侯宣布，战帝与魔神同归于尽，炎，赵，钱三大武侯也一同殉难。宣布完便立即与其他幸存的武侯闭关清修，六大远古家族元气大伤。消息一出，各大势力蠢蠢欲动，然而洞天书院以雷霆手段扫清各种异动，重新整合了洞天大陆，自此大陆开始以洞天书院为尊。洞天历五十年十月初一。洞天书院宣布比武大会即将开始，天下高手一决雌雄。若是能取得名次将会获得丰厚的奖励。" enabled="true" visible="true" accessible="true" x="116" y="246" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="无上" name="无上" label="无上" enabled="true" visible="true" accessible="true" x="168" y="162" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7.8分" name="7.8分" label="7.8分" enabled="true" visible="true" accessible="true" x="188" y="215" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城2个省钱团购，低至¥149起" name="同城2个省钱团购，低至¥149起" label="同城2个省钱团购，低至¥149起" enabled="true" visible="true" accessible="true" x="67" y="281" width="167" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="8人本" name="8人本" label="8人本" enabled="true" visible="true" accessible="true" x="29" y="252" width="36" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="175" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="175" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="345" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 阵营 欢乐 进阶" name="架空 阵营 欢乐 进阶" label="架空 阵营 欢乐 进阶" enabled="true" visible="true" accessible="true" x="116" y="187" width="250" height="17" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="322" width="390" height="202" index="2" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 机制 欢乐 进阶" name="架空 机制 欢乐 进阶" label="架空 机制 欢乐 进阶" enabled="true" visible="true" accessible="true" x="116" y="362" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="多年前，一场惨烈无比的人魔大战席卷了洞天大陆。魔族大举入侵，数以万计的人族英烈在洞天大陆中央的洞天书院与魔族殊死一战。那场战斗惨烈无比，霎时间山河破碎，日月无光，此方天地都为之倾覆。传说有八位绝世高手血战到了最后一刻。他们有通天彻地之能，隶属于人魔两方阵营，拥有着当世最强的力量。这场战斗的结局无人知晓，多年后只留下了无尽的传说，英雄们的传奇事迹也变成了人们茶余饭后的谈资。此战过后大陆迎来了全新的时代。魔族世代繁衍的天魔大陆和人族守护的洞天大陆合二为一，两族展开了长达数十年的激烈交锋，双方死伤无数，各有胜负。如今天下迎来了短暂的和平，双方都不再发起大规模的战争，各自休养生息，绝顶高手也如雨后春笋般纷纷崛起，万族林立，生机勃勃。当今天下最强者共有七人，他们被世人称其为七尊。其实力深不可测，可撼动日月，扭转乾坤。这七人神龙见首不见尾，世人只知其尊号却不知其真实身份。也许在某个不知名的小角落里，就有一位恐怖无比的大能在静静蛰伏，冷眼观瞧着这方世界。突然间一则消息打破了宁静，仙域即将现世，只有绝世高手才能踏上征程。抵达仙域后，要渡过界海，走过通天桥，才能踏足仙域尽头那至高无上的终极之地，混元圣人的道果就在此处。界海的每一朵浪花都蕴含一方破败的世界，威能无量。而通天桥更是重若万钧，稍有不慎便粉身碎骨。消息一出，天下哗然，各大势力蠢蠢欲动，七尊也不约而至。混元圣人道果将引爆一场空前惨烈的风暴。三花聚顶，五气朝元。圣人之境凌驾于天道之上，超脱三界、跳出五行、不生不灭、永不轮回。成圣者将主宰大千世界，至尊无上。" name="多年前，一场惨烈无比的人魔大战席卷了洞天大陆。魔族大举入侵，数以万计的人族英烈在洞天大陆中央的洞天书院与魔族殊死一战。那场战斗惨烈无比，霎时间山河破碎，日月无光，此方天地都为之倾覆。传说有八位绝世高手血战到了最后一刻。他们有通天彻地之能，隶属于人魔两方阵营，拥有着当世最强的力量。这场战斗的结局无人知晓，多年后只留下了无尽的传说，英雄们的传奇事迹也变成了人们茶余饭后的谈资。此战过后大陆迎来了全新的时代。魔族世代繁衍的天魔大陆和人族守护的洞天大陆合二为一，两族展开了长达数十年的激烈交锋，双方死伤无数，各有胜负。如今天下迎来了短暂的和平，双方都不再发起大规模的战争，各自休养生息，绝顶高手也如雨后春笋般纷纷崛起，万族林立，生机勃勃。当今天下最强者共有七人，他们被世人称其为七尊。其实力深不可测，可撼动日月，扭转乾坤。这七人神龙见首不见尾，世人只知其尊号却不知其真实身份。也许在某个不知名的小角落里，就有一位恐怖无比的大能在静静蛰伏，冷眼观瞧着这方世界。突然间一则消息打破了宁静，仙域即将现世，只有绝世高手才能踏上征程。抵达仙域后，要渡过界海，走过通天桥，才能踏足仙域尽头那至高无上的终极之地，混元圣人的道果就在此处。界海的每一朵浪花都蕴含一方破败的世界，威能无量。而通天桥更是重若万钧，稍有不慎便粉身碎骨。消息一出，天下哗然，各大势力蠢蠢欲动，七尊也不约而至。混元圣人道果将引爆一场空前惨烈的风暴。三花聚顶，五气朝元。圣人之境凌驾于天道之上，超脱三界、跳出五行、不生不灭、永不轮回。成圣者将主宰大千世界，至尊无上。" label="多年前，一场惨烈无比的人魔大战席卷了洞天大陆。魔族大举入侵，数以万计的人族英烈在洞天大陆中央的洞天书院与魔族殊死一战。那场战斗惨烈无比，霎时间山河破碎，日月无光，此方天地都为之倾覆。传说有八位绝世高手血战到了最后一刻。他们有通天彻地之能，隶属于人魔两方阵营，拥有着当世最强的力量。这场战斗的结局无人知晓，多年后只留下了无尽的传说，英雄们的传奇事迹也变成了人们茶余饭后的谈资。此战过后大陆迎来了全新的时代。魔族世代繁衍的天魔大陆和人族守护的洞天大陆合二为一，两族展开了长达数十年的激烈交锋，双方死伤无数，各有胜负。如今天下迎来了短暂的和平，双方都不再发起大规模的战争，各自休养生息，绝顶高手也如雨后春笋般纷纷崛起，万族林立，生机勃勃。当今天下最强者共有七人，他们被世人称其为七尊。其实力深不可测，可撼动日月，扭转乾坤。这七人神龙见首不见尾，世人只知其尊号却不知其真实身份。也许在某个不知名的小角落里，就有一位恐怖无比的大能在静静蛰伏，冷眼观瞧着这方世界。突然间一则消息打破了宁静，仙域即将现世，只有绝世高手才能踏上征程。抵达仙域后，要渡过界海，走过通天桥，才能踏足仙域尽头那至高无上的终极之地，混元圣人的道果就在此处。界海的每一朵浪花都蕴含一方破败的世界，威能无量。而通天桥更是重若万钧，稍有不慎便粉身碎骨。消息一出，天下哗然，各大势力蠢蠢欲动，七尊也不约而至。混元圣人道果将引爆一场空前惨烈的风暴。三花聚顶，五气朝元。圣人之境凌驾于天道之上，超脱三界、跳出五行、不生不灭、永不轮回。成圣者将主宰大千世界，至尊无上。" enabled="true" visible="true" accessible="true" x="116" y="421" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.7分" name="6.7分" label="6.7分" enabled="true" visible="true" accessible="true" x="188" y="390" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1家店铺可玩" name="同城1家店铺可玩" label="同城1家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="460" width="89" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1个省钱团购，低至¥187起" name="同城1个省钱团购，低至¥187起" label="同城1个省钱团购，低至¥187起" enabled="true" visible="true" accessible="true" x="67" y="483" width="164" height="17" index="4" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="true" accessible="true" x="29" y="427" width="35" height="14" index="5" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="322" width="390" height="202" index="6" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="322" width="390" height="202" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="8" y="520" width="420" height="1" index="7" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="无上2混元道祖" name="无上2混元道祖" label="无上2混元道祖" enabled="true" visible="true" accessible="true" x="116" y="337" width="250" height="21" index="8" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="524" width="390" height="146" index="3" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 情感 沉浸 进阶" name="架空 情感 沉浸 进阶" label="架空 情感 沉浸 进阶" enabled="true" visible="true" accessible="true" x="116" y="564" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="那些被烈火洗礼过的灵魂，将会同人民的命运交织在一起，从往至今，人民都相信着我们，支持着我们！我不会和你们讲必胜的豪言壮语，也无法保证每个人都能活着回来但是各位请记住我们今天所做的一切无上光荣！" name="那些被烈火洗礼过的灵魂，将会同人民的命运交织在一起，从往至今，人民都相信着我们，支持着我们！我不会和你们讲必胜的豪言壮语，也无法保证每个人都能活着回来但是各位请记住我们今天所做的一切无上光荣！" label="那些被烈火洗礼过的灵魂，将会同人民的命运交织在一起，从往至今，人民都相信着我们，支持着我们！我不会和你们讲必胜的豪言壮语，也无法保证每个人都能活着回来但是各位请记住我们今天所做的一切无上光荣！" enabled="true" visible="true" accessible="true" x="116" y="623" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="629" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="524" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="524" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="722" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="无上光荣：赤子" name="无上光荣：赤子" label="无上光荣：赤子" enabled="true" visible="true" accessible="true" x="116" y="539" width="250" height="21" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="670" width="390" height="0" index="4" traits=""/>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="水平滚动条, 1页" label="水平滚动条, 1页" enabled="true" visible="false" accessible="false" x="0" y="777" width="390" height="30" index="5" traits="Adjustable">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="3" y="804" width="384" height="3" index="0" traits=""/>
+                              </XCUIElementTypeOther>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="No more data" name="No more data" label="No more data" enabled="true" visible="false" accessible="true" x="0" y="810" width="390" height="44" index="6" traits="StaticText"/>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Pull down to refresh" name="Pull down to refresh" label="Pull down to refresh" enabled="true" visible="false" accessible="true" x="0" y="78" width="390" height="54" index="7" traits="StaticText"/>
+                            </XCUIElementTypeTable>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeScrollView>
+                      </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="toplogowhite" enabled="true" visible="false" accessible="false" x="173" y="10" width="44" height="16" index="1" traits="Image"/>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="1" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits=""/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

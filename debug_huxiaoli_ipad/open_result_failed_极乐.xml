@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="谜圈" label="谜圈" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="" processId="1225" bundleId="com.juhaowan123.www">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="47" width="390" height="44" index="0" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="16" y="52" width="314" height="34" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" name="home_top_search" enabled="true" visible="true" accessible="false" x="32" y="61" width="15" height="16" index="0" traits="Image"/>
+                            <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="极乐" label="" enabled="true" visible="true" accessible="true" x="52" y="52" width="248" height="34" index="1" placeholderValue=" 搜索剧本 发行 店铺 组局 用户" traits=""/>
+                            <XCUIElementTypeButton type="XCUIElementTypeButton" name="sys clear icon" label="sys clear icon" enabled="true" visible="true" accessible="true" x="300" y="54" width="30" height="30" index="2" traits="Button"/>
+                          </XCUIElementTypeOther>
+                          <XCUIElementTypeButton type="XCUIElementTypeButton" name="取消" label="取消" enabled="true" visible="true" accessible="true" x="330" y="47" width="60" height="44" index="1" traits="Button">
+                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="取消" name="取消" label="取消" enabled="true" visible="true" accessible="false" x="346" y="59" width="28" height="20" index="0" traits="StaticText"/>
+                          </XCUIElementTypeButton>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="Image"/>
+                            <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="全部" label="全部" enabled="true" visible="true" accessible="true" x="12" y="88" width="30" height="44" index="0" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="全部" name="全部" label="全部" enabled="true" visible="true" accessible="false" x="12" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="剧本" label="剧本" enabled="true" visible="true" accessible="true" x="66" y="88" width="32" height="44" index="1" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="剧本" name="剧本" label="剧本" enabled="true" visible="true" accessible="false" x="66" y="98" width="32" height="24" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="true" x="122" y="88" width="30" height="44" index="2" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="兴趣" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="false" x="122" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="店铺" label="店铺" enabled="true" visible="true" accessible="true" x="176" y="88" width="30" height="44" index="3" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="店铺" name="店铺" label="店铺" enabled="true" visible="true" accessible="false" x="176" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="组局" label="组局" enabled="true" visible="true" accessible="true" x="230" y="88" width="30" height="44" index="4" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="组局" name="组局" label="组局" enabled="true" visible="true" accessible="false" x="230" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="用户" label="用户" enabled="true" visible="true" accessible="true" x="284" y="88" width="30" height="44" index="5" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="用户" name="用户" label="用户" enabled="true" visible="true" accessible="false" x="284" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="发行" label="发行" enabled="true" visible="true" accessible="true" x="338" y="88" width="30" height="44" index="6" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="发行" name="发行" label="发行" enabled="true" visible="true" accessible="false" x="338" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="74" y="123" width="16" height="3" index="7" traits="Image"/>
+                            </XCUIElementTypeScrollView>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="2" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="0" traits="">
+                            <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="678" index="0" traits="">
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="147" width="390" height="0" index="0" traits=""/>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="147" width="390" height="202" index="1" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="民国 推理 惊悚 高阶" name="民国 推理 惊悚 高阶" label="民国 推理 惊悚 高阶" enabled="true" visible="true" accessible="true" x="116" y="187" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="一座浓雾环绕的小岛上，竟有一处犹如世外桃源般的江南园林。然而，当你走进这座园林，你会发现这里空无一人，一片死寂。清朝末年，一位名叫唐志海的渔夫在遭遇海难之后，被海水冲到了这座孤岛上，他无意中发现了这座隐世园林，同时还发现了这片美景之下隐藏着的十三口棺材。唐志海将园林命名为唐园，将自己封为这里的主人。然而“厉鬼”正在静静的注视着这一切，地狱的罗网已经缓缓张开。" name="一座浓雾环绕的小岛上，竟有一处犹如世外桃源般的江南园林。然而，当你走进这座园林，你会发现这里空无一人，一片死寂。清朝末年，一位名叫唐志海的渔夫在遭遇海难之后，被海水冲到了这座孤岛上，他无意中发现了这座隐世园林，同时还发现了这片美景之下隐藏着的十三口棺材。唐志海将园林命名为唐园，将自己封为这里的主人。然而“厉鬼”正在静静的注视着这一切，地狱的罗网已经缓缓张开。" label="一座浓雾环绕的小岛上，竟有一处犹如世外桃源般的江南园林。然而，当你走进这座园林，你会发现这里空无一人，一片死寂。清朝末年，一位名叫唐志海的渔夫在遭遇海难之后，被海水冲到了这座孤岛上，他无意中发现了这座隐世园林，同时还发现了这片美景之下隐藏着的十三口棺材。唐志海将园林命名为唐园，将自己封为这里的主人。然而“厉鬼”正在静静的注视着这一切，地狱的罗网已经缓缓张开。" enabled="true" visible="true" accessible="true" x="116" y="246" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="8.4分" name="8.4分" label="8.4分" enabled="true" visible="true" accessible="true" x="188" y="215" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城61家店铺可玩" name="同城61家店铺可玩" label="同城61家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="285" width="97" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城32个省钱团购，低至¥40起" name="同城32个省钱团购，低至¥40起" label="同城32个省钱团购，低至¥40起" enabled="true" visible="true" accessible="true" x="67" y="308" width="169" height="17" index="4" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="5人本" name="5人本" label="5人本" enabled="true" visible="true" accessible="true" x="29" y="252" width="36" height="14" index="5" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="6" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="8" y="345" width="420" height="1" index="7" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="013极乐密室" name="013极乐密室" label="013极乐密室" enabled="true" visible="true" accessible="true" x="116" y="162" width="250" height="21" index="8" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="349" width="390" height="185" index="2" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="天宝年间，暗流涌动。云想衣裳花想容，春风拂槛露华浓，可这长安的露水，从来都混着血与泪。那一年…盛唐绮梦在安史之乱的铁蹄下化为乌有。那一年…他以幻术为刃，她以人心做筏。当马嵬驿的梨花再次飘落，三尺白绫亦绞不断石榴裙下的温柔刀。欢迎来到极樂盛宴，这场盛宴中，从来没有清白之人……依据【天宝年间】的盛衰交替期改编而作，并非完全贴合正史，如有雷同，请问雷同。" name="天宝年间，暗流涌动。云想衣裳花想容，春风拂槛露华浓，可这长安的露水，从来都混着血与泪。那一年…盛唐绮梦在安史之乱的铁蹄下化为乌有。那一年…他以幻术为刃，她以人心做筏。当马嵬驿的梨花再次飘落，三尺白绫亦绞不断石榴裙下的温柔刀。欢迎来到极樂盛宴，这场盛宴中，从来没有清白之人……依据【天宝年间】的盛衰交替期改编而作，并非完全贴合正史，如有雷同，请问雷同。" label="天宝年间，暗流涌动。云想衣裳花想容，春风拂槛露华浓，可这长安的露水，从来都混着血与泪。那一年…盛唐绮梦在安史之乱的铁蹄下化为乌有。那一年…他以幻术为刃，她以人心做筏。当马嵬驿的梨花再次飘落，三尺白绫亦绞不断石榴裙下的温柔刀。欢迎来到极樂盛宴，这场盛宴中，从来没有清白之人……依据【天宝年间】的盛衰交替期改编而作，并非完全贴合正史，如有雷同，请问雷同。" enabled="true" visible="true" accessible="true" x="116" y="448" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="极樂（极乐）" name="极樂（极乐）" label="极樂（极乐）" enabled="true" visible="true" accessible="true" x="168" y="364" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7.2分" name="7.2分" label="7.2分" enabled="true" visible="true" accessible="true" x="188" y="417" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1家店铺可玩" name="同城1家店铺可玩" label="同城1家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="487" width="89" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="454" width="36" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="349" width="390" height="185" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="349" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="547" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="古风 情感 博弈 新手" name="古风 情感 博弈 新手" label="古风 情感 博弈 新手" enabled="true" visible="true" accessible="true" x="116" y="389" width="250" height="17" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="534" width="390" height="185" index="3" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="在大洋的彼岸，有一座淘金者人人向往的城市。这里是匪帮的乐园，这里崇尚钞票、豪车、珠宝，这里以貌取人、唯利是图，这里金砖铺地、无法无天，小羊羔，欢迎来到——极乐城！WELCOMETOTHELAWLESSCITY！！！" name="在大洋的彼岸，有一座淘金者人人向往的城市。这里是匪帮的乐园，这里崇尚钞票、豪车、珠宝，这里以貌取人、唯利是图，这里金砖铺地、无法无天，小羊羔，欢迎来到——极乐城！WELCOMETOTHELAWLESSCITY！！！" label="在大洋的彼岸，有一座淘金者人人向往的城市。这里是匪帮的乐园，这里崇尚钞票、豪车、珠宝，这里以貌取人、唯利是图，这里金砖铺地、无法无天，小羊羔，欢迎来到——极乐城！WELCOMETOTHELAWLESSCITY！！！" enabled="true" visible="true" accessible="true" x="116" y="633" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="THUGS！极乐都市" name="THUGS！极乐都市" label="THUGS！极乐都市" enabled="true" visible="true" accessible="true" x="168" y="549" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="8.0分" name="8.0分" label="8.0分" enabled="true" visible="true" accessible="true" x="188" y="602" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城4家店铺可玩" name="同城4家店铺可玩" label="同城4家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="672" width="92" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="true" accessible="true" x="29" y="639" width="35" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="534" width="390" height="185" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="534" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="732" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="国外 机制 博弈 进阶" name="国外 机制 博弈 进阶" label="国外 机制 博弈 进阶" enabled="true" visible="true" accessible="true" x="116" y="574" width="250" height="17" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="719" width="390" height="146" index="4" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="古风 情感 演绎 进阶" name="古风 情感 演绎 进阶" label="古风 情感 演绎 进阶" enabled="true" visible="true" accessible="true" x="116" y="759" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="明崇祯＋四年神秘富商【元宝夫人】远赴玉门関，请求玉门関守将【银戈】将军借调士卒，护其深入塔克拉玛干沙漠，寻找传说中楼兰女王【青环】之墓【银戈】将军联络熟识大漠的黑暗茶饮界【谋财帮】众人护送【元宝夫人】前去探墓，不料约定返回的时日已过，却不见任何人回回到关口【银戈】将军只好求助好友摄魂师【指兰】，将精选的探子魂魄发往阴阳界，希望探子们能尽量赶在众人魂魄渡过鬼门关前探清真相，而您，便是这群探子中的一员。【元宝夫人】一行究竟经历了什么【青环】的墓穴里究竟藏着什么秘密，还请您来这【极楽黄泉客栈】一探究竟…" name="明崇祯＋四年神秘富商【元宝夫人】远赴玉门関，请求玉门関守将【银戈】将军借调士卒，护其深入塔克拉玛干沙漠，寻找传说中楼兰女王【青环】之墓【银戈】将军联络熟识大漠的黑暗茶饮界【谋财帮】众人护送【元宝夫人】前去探墓，不料约定返回的时日已过，却不见任何人回回到关口【银戈】将军只好求助好友摄魂师【指兰】，将精选的探子魂魄发往阴阳界，希望探子们能尽量赶在众人魂魄渡过鬼门关前探清真相，而您，便是这群探子中的一员。【元宝夫人】一行究竟经历了什么【青环】的墓穴里究竟藏着什么秘密，还请您来这【极楽黄泉客栈】一探究竟…" label="明崇祯＋四年神秘富商【元宝夫人】远赴玉门関，请求玉门関守将【银戈】将军借调士卒，护其深入塔克拉玛干沙漠，寻找传说中楼兰女王【青环】之墓【银戈】将军联络熟识大漠的黑暗茶饮界【谋财帮】众人护送【元宝夫人】前去探墓，不料约定返回的时日已过，却不见任何人回回到关口【银戈】将军只好求助好友摄魂师【指兰】，将精选的探子魂魄发往阴阳界，希望探子们能尽量赶在众人魂魄渡过鬼门关前探清真相，而您，便是这群探子中的一员。【元宝夫人】一行究竟经历了什么【青环】的墓穴里究竟藏着什么秘密，还请您来这【极楽黄泉客栈】一探究竟…" enabled="true" visible="false" accessible="true" x="116" y="818" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="20人本" name="20人本" label="20人本" enabled="true" visible="false" accessible="true" x="29" y="824" width="44" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="719" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="719" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="917" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="蛊魂铃·极乐黄泉" name="蛊魂铃·极乐黄泉" label="蛊魂铃·极乐黄泉" enabled="true" visible="true" accessible="true" x="116" y="734" width="250" height="21" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="865" width="390" height="146" index="5" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 机制 欢乐 进阶" name="中式 机制 欢乐 进阶" label="中式 机制 欢乐 进阶" enabled="true" visible="false" accessible="true" x="116" y="905" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="夜晚讨生活的男女徜徉在无尽的夜色中，他们的一赞一笑犹如灌满润滑液的永动机而魅惑的背后又好似有人们无法看透的歇斯底里他们是夜晚出生的孩子--“夜总会公主少爷”夜总会那点事儿~等你来~" name="夜晚讨生活的男女徜徉在无尽的夜色中，他们的一赞一笑犹如灌满润滑液的永动机而魅惑的背后又好似有人们无法看透的歇斯底里他们是夜晚出生的孩子--“夜总会公主少爷”夜总会那点事儿~等你来~" label="夜晚讨生活的男女徜徉在无尽的夜色中，他们的一赞一笑犹如灌满润滑液的永动机而魅惑的背后又好似有人们无法看透的歇斯底里他们是夜晚出生的孩子--“夜总会公主少爷”夜总会那点事儿~等你来~" enabled="true" visible="false" accessible="true" x="116" y="964" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.5分" name="6.5分" label="6.5分" enabled="true" visible="false" accessible="true" x="188" y="933" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="false" accessible="true" x="29" y="970" width="35" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="865" width="390" height="146" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="865" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="1063" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="幻梦城：极乐之夜" name="幻梦城：极乐之夜" label="幻梦城：极乐之夜" enabled="true" visible="false" accessible="true" x="116" y="880" width="250" height="21" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1011" width="390" height="146" index="6" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 推理 惊悚 进阶" name="架空 推理 惊悚 进阶" label="架空 推理 惊悚 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="极乐地狱" name="极乐地狱" label="极乐地狱" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="传说桃都山是连接阴阳两界的通道，生前作恶多端无法轮回的灵魂都要从这里进入地狱。桃都市，一座繁华的边境小城，光鲜的城市外表下隐藏着许许多多的罪恶。一座神秘的监狱，六块烧焦的尸块，一段鲜血淋漓的回忆……死者能否沉冤得雪？真相能否公之于众？今天，就让我们一起打开他们的回忆录，揭开那些不为人知的秘密……" name="传说桃都山是连接阴阳两界的通道，生前作恶多端无法轮回的灵魂都要从这里进入地狱。桃都市，一座繁华的边境小城，光鲜的城市外表下隐藏着许许多多的罪恶。一座神秘的监狱，六块烧焦的尸块，一段鲜血淋漓的回忆……死者能否沉冤得雪？真相能否公之于众？今天，就让我们一起打开他们的回忆录，揭开那些不为人知的秘密……" label="传说桃都山是连接阴阳两界的通道，生前作恶多端无法轮回的灵魂都要从这里进入地狱。桃都市，一座繁华的边境小城，光鲜的城市外表下隐藏着许许多多的罪恶。一座神秘的监狱，六块烧焦的尸块，一段鲜血淋漓的回忆……死者能否沉冤得雪？真相能否公之于众？今天，就让我们一起打开他们的回忆录，揭开那些不为人知的秘密……" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1157" width="390" height="146" index="7" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="未来 机制 其他 新手" name="未来 机制 其他 新手" label="未来 机制 其他 新手" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="极乐废土" name="极乐废土" label="极乐废土" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="35" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="万年前，世界进入末法时代，世界无法维系人类存活，动植物大批量死亡，无奈之下人类只能进入地下城生活，无论任何种族，无论是谁，都要封印自身进入废土之地才能活命。而如今，时代复苏，时间滋养了大地，记忆渐渐涌现，能力渐渐回归。你是谁？你们是谁？而这一方天地，又将归于谁？！" name="万年前，世界进入末法时代，世界无法维系人类存活，动植物大批量死亡，无奈之下人类只能进入地下城生活，无论任何种族，无论是谁，都要封印自身进入废土之地才能活命。而如今，时代复苏，时间滋养了大地，记忆渐渐涌现，能力渐渐回归。你是谁？你们是谁？而这一方天地，又将归于谁？！" label="万年前，世界进入末法时代，世界无法维系人类存活，动植物大批量死亡，无奈之下人类只能进入地下城生活，无论任何种族，无论是谁，都要封印自身进入废土之地才能活命。而如今，时代复苏，时间滋养了大地，记忆渐渐涌现，能力渐渐回归。你是谁？你们是谁？而这一方天地，又将归于谁？！" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1303" width="390" height="146" index="8" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="古风 推理 沉浸 进阶" name="古风 推理 沉浸 进阶" label="古风 推理 沉浸 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="极乐引" name="极乐引" label="极乐引" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="世间万民，有生皆苦。此间战火纷飞，两大王朝征伐不断，黎民百姓受尽煎熬蹂躏，民不聊生。但传说世上有这么一处极乐之所在，它隐蔽于群山之中，烟云之下，是一处世外桃源。入内者衣食无忧，欢喜自在，再不被世间纷扰所困。但这山庄却有一规矩，它只接引有缘人······" name="世间万民，有生皆苦。此间战火纷飞，两大王朝征伐不断，黎民百姓受尽煎熬蹂躏，民不聊生。但传说世上有这么一处极乐之所在，它隐蔽于群山之中，烟云之下，是一处世外桃源。入内者衣食无忧，欢喜自在，再不被世间纷扰所困。但这山庄却有一规矩，它只接引有缘人······" label="世间万民，有生皆苦。此间战火纷飞，两大王朝征伐不断，黎民百姓受尽煎熬蹂躏，民不聊生。但传说世上有这么一处极乐之所在，它隐蔽于群山之中，烟云之下，是一处世外桃源。入内者衣食无忧，欢喜自在，再不被世间纷扰所困。但这山庄却有一规矩，它只接引有缘人······" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1449" width="390" height="146" index="9" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="未来 推理 立意 进阶" name="未来 推理 立意 进阶" label="未来 推理 立意 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="极乐灯塔：地外威胁" name="极乐灯塔：地外威胁" label="极乐灯塔：地外威胁" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="21世纪末，七大超级公司作为新的全球统治者，咸功与名为“脑菌”的外星人取得了联系。双方约定于地球历2080年10月17日，各自派出代表，在“共工号”地球空间站正式建立外交关系。就在外交条约缔结前夜，脑菌外事团的一名高级外交官竟离奇死亡，尸体被发现在人类居住区。外星人宣称:如若不交出真凶，地球将迎接连绵不绝的星际战火。于是，生活在该舱室的六名地球人员，被紧急隔离到行星会议室。他们必须洗脱身上的嫌疑，找出谋杀外星人的真正凶手，以化解迫在眉睫的战争危机。" name="21世纪末，七大超级公司作为新的全球统治者，咸功与名为“脑菌”的外星人取得了联系。双方约定于地球历2080年10月17日，各自派出代表，在“共工号”地球空间站正式建立外交关系。就在外交条约缔结前夜，脑菌外事团的一名高级外交官竟离奇死亡，尸体被发现在人类居住区。外星人宣称:如若不交出真凶，地球将迎接连绵不绝的星际战火。于是，生活在该舱室的六名地球人员，被紧急隔离到行星会议室。他们必须洗脱身上的嫌疑，找出谋杀外星人的真正凶手，以化解迫在眉睫的战争危机。" label="21世纪末，七大超级公司作为新的全球统治者，咸功与名为“脑菌”的外星人取得了联系。双方约定于地球历2080年10月17日，各自派出代表，在“共工号”地球空间站正式建立外交关系。就在外交条约缔结前夜，脑菌外事团的一名高级外交官竟离奇死亡，尸体被发现在人类居住区。外星人宣称:如若不交出真凶，地球将迎接连绵不绝的星际战火。于是，生活在该舱室的六名地球人员，被紧急隔离到行星会议室。他们必须洗脱身上的嫌疑，找出谋杀外星人的真正凶手，以化解迫在眉睫的战争危机。" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1595" width="390" height="185" index="10" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="日式 机制 跑团 进阶" name="日式 机制 跑团 进阶" label="日式 机制 跑团 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="雇佣行动：极乐" name="雇佣行动：极乐" label="雇佣行动：极乐" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1家店铺可玩" name="同城1家店铺可玩" label="同城1家店铺可玩" enabled="true" visible="false" accessible="true" x="0" y="132" width="89" height="17" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="36" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="185" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="喧嚣点燃热闹的夏日庆典，盛大的烟火于夜空中绽放。烟火之下，一枚银白色的神秘U盘于黑石大楼之中，静候着它将来的主人。爵士乐的环绕中，一个计划悄然诞生。而你们正举着酒杯，等待着庆典拉开序幕的那一刻。“嗨，我是Lemon，这一杯祝我们合作愉快。”" name="喧嚣点燃热闹的夏日庆典，盛大的烟火于夜空中绽放。烟火之下，一枚银白色的神秘U盘于黑石大楼之中，静候着它将来的主人。爵士乐的环绕中，一个计划悄然诞生。而你们正举着酒杯，等待着庆典拉开序幕的那一刻。“嗨，我是Lemon，这一杯祝我们合作愉快。”" label="喧嚣点燃热闹的夏日庆典，盛大的烟火于夜空中绽放。烟火之下，一枚银白色的神秘U盘于黑石大楼之中，静候着它将来的主人。爵士乐的环绕中，一个计划悄然诞生。而你们正举着酒杯，等待着庆典拉开序幕的那一刻。“嗨，我是Lemon，这一杯祝我们合作愉快。”" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="810" width="390" height="0" index="11" traits=""/>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="水平滚动条, 1页" label="水平滚动条, 1页" enabled="true" visible="false" accessible="false" x="0" y="777" width="390" height="30" index="12" traits="Adjustable">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="3" y="804" width="381" height="3" index="0" traits=""/>
+                              </XCUIElementTypeOther>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="No more data" name="No more data" label="No more data" enabled="true" visible="false" accessible="true" x="0" y="1780" width="390" height="44" index="13" traits="StaticText"/>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Pull down to refresh" name="Pull down to refresh" label="Pull down to refresh" enabled="true" visible="false" accessible="true" x="0" y="78" width="390" height="54" index="14" traits="StaticText"/>
+                            </XCUIElementTypeTable>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeScrollView>
+                      </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="toplogowhite" enabled="true" visible="false" accessible="false" x="173" y="10" width="44" height="16" index="1" traits="Image"/>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="1" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits=""/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

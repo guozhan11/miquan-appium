@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="谜圈" label="谜圈" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="" processId="3236" bundleId="com.juhaowan123.www">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="47" width="390" height="44" index="0" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="16" y="52" width="314" height="34" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" name="home_top_search" enabled="true" visible="true" accessible="false" x="32" y="61" width="15" height="16" index="0" traits="Image"/>
+                            <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="白夜" label="" enabled="true" visible="true" accessible="true" x="52" y="52" width="248" height="34" index="1" placeholderValue=" 搜索剧本 发行 店铺 组局 用户" traits=""/>
+                            <XCUIElementTypeButton type="XCUIElementTypeButton" name="sys clear icon" label="sys clear icon" enabled="true" visible="true" accessible="true" x="300" y="54" width="30" height="30" index="2" traits="Button"/>
+                          </XCUIElementTypeOther>
+                          <XCUIElementTypeButton type="XCUIElementTypeButton" name="取消" label="取消" enabled="true" visible="true" accessible="true" x="330" y="47" width="60" height="44" index="1" traits="Button">
+                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="取消" name="取消" label="取消" enabled="true" visible="true" accessible="false" x="346" y="59" width="28" height="20" index="0" traits="StaticText"/>
+                          </XCUIElementTypeButton>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="Image"/>
+                            <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="全部" label="全部" enabled="true" visible="true" accessible="true" x="12" y="88" width="30" height="44" index="0" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="全部" name="全部" label="全部" enabled="true" visible="true" accessible="false" x="12" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="剧本" label="剧本" enabled="true" visible="true" accessible="true" x="66" y="88" width="32" height="44" index="1" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="剧本" name="剧本" label="剧本" enabled="true" visible="true" accessible="false" x="66" y="98" width="32" height="24" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="true" x="122" y="88" width="30" height="44" index="2" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="兴趣" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="false" x="122" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="店铺" label="店铺" enabled="true" visible="true" accessible="true" x="176" y="88" width="30" height="44" index="3" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="店铺" name="店铺" label="店铺" enabled="true" visible="true" accessible="false" x="176" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="组局" label="组局" enabled="true" visible="true" accessible="true" x="230" y="88" width="30" height="44" index="4" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="组局" name="组局" label="组局" enabled="true" visible="true" accessible="false" x="230" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="用户" label="用户" enabled="true" visible="true" accessible="true" x="284" y="88" width="30" height="44" index="5" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="用户" name="用户" label="用户" enabled="true" visible="true" accessible="false" x="284" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="发行" label="发行" enabled="true" visible="true" accessible="true" x="338" y="88" width="30" height="44" index="6" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="发行" name="发行" label="发行" enabled="true" visible="true" accessible="false" x="338" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="74" y="123" width="16" height="3" index="7" traits="Image"/>
+                            </XCUIElementTypeScrollView>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="2" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="0" traits="">
+                            <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="678" index="0" traits="">
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="147" width="390" height="0" index="0" traits=""/>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="147" width="390" height="185" index="1" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="平静的火车站发生剧烈爆炸男子身绑炸弹于站台引爆尸体腹中仅存的牛皮纸条成为唯一线索嫌疑人明目张胆跨过边境，逃之夭夭新型毒品肆虐，内鬼暗中作梗，卧底信息尽数暴露…凭空出现的地址...消失的线人...敌我难辨...金三角笼罩在一片灰白的通天迷雾之中...谁能从白夜里脱身，谁又能冲破荼毒的荆棘？" name="平静的火车站发生剧烈爆炸男子身绑炸弹于站台引爆尸体腹中仅存的牛皮纸条成为唯一线索嫌疑人明目张胆跨过边境，逃之夭夭新型毒品肆虐，内鬼暗中作梗，卧底信息尽数暴露…凭空出现的地址...消失的线人...敌我难辨...金三角笼罩在一片灰白的通天迷雾之中...谁能从白夜里脱身，谁又能冲破荼毒的荆棘？" label="平静的火车站发生剧烈爆炸男子身绑炸弹于站台引爆尸体腹中仅存的牛皮纸条成为唯一线索嫌疑人明目张胆跨过边境，逃之夭夭新型毒品肆虐，内鬼暗中作梗，卧底信息尽数暴露…凭空出现的地址...消失的线人...敌我难辨...金三角笼罩在一片灰白的通天迷雾之中...谁能从白夜里脱身，谁又能冲破荼毒的荆棘？" enabled="true" visible="true" accessible="true" x="116" y="246" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="白夜" name="白夜" label="白夜" enabled="true" visible="true" accessible="true" x="168" y="162" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.1分" name="6.1分" label="6.1分" enabled="true" visible="true" accessible="true" x="188" y="215" width="26" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城3家店铺可玩" name="同城3家店铺可玩" label="同城3家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="285" width="92" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="252" width="36" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="185" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="345" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="现代 情感 沉浸 进阶" name="现代 情感 沉浸 进阶" label="现代 情感 沉浸 进阶" enabled="true" visible="true" accessible="true" x="116" y="187" width="250" height="17" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="332" width="390" height="185" index="2" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="现代 推理 悬疑 新手" name="现代 推理 悬疑 新手" label="现代 推理 悬疑 新手" enabled="true" visible="true" accessible="true" x="116" y="372" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="津港市的夜亮如白昼，在无尽繁华下流淌的却是不为人知的隐秘-——掬一捧夜风，隐隐嗅到了远方传来的血腥气。多起凶杀案接连发生，先是数个位高权重的官员命强，再是知名企业家自杀，津港一时间风起云涌。而今室件终于告破，五枚现场发现的金色棋子更是成为这一论断的铁证。看似一切皆水落石出，但刑侦支队六名因此停职的干警却认为，这只不过是山雨欲来前的波澜。可区区几个小警员如何与深藏的暗流相抗衡？于是他们邀关宏峰入局，立誓要做一道照亮津港夜空的闪电，要撕开这座城市繁华的表象。挣扎，求索；威胁；死亡，他们能走到最后吗?还是会被这津港的夜色所吞没？" name="津港市的夜亮如白昼，在无尽繁华下流淌的却是不为人知的隐秘-——掬一捧夜风，隐隐嗅到了远方传来的血腥气。多起凶杀案接连发生，先是数个位高权重的官员命强，再是知名企业家自杀，津港一时间风起云涌。而今室件终于告破，五枚现场发现的金色棋子更是成为这一论断的铁证。看似一切皆水落石出，但刑侦支队六名因此停职的干警却认为，这只不过是山雨欲来前的波澜。可区区几个小警员如何与深藏的暗流相抗衡？于是他们邀关宏峰入局，立誓要做一道照亮津港夜空的闪电，要撕开这座城市繁华的表象。挣扎，求索；威胁；死亡，他们能走到最后吗?还是会被这津港的夜色所吞没？" label="津港市的夜亮如白昼，在无尽繁华下流淌的却是不为人知的隐秘-——掬一捧夜风，隐隐嗅到了远方传来的血腥气。多起凶杀案接连发生，先是数个位高权重的官员命强，再是知名企业家自杀，津港一时间风起云涌。而今室件终于告破，五枚现场发现的金色棋子更是成为这一论断的铁证。看似一切皆水落石出，但刑侦支队六名因此停职的干警却认为，这只不过是山雨欲来前的波澜。可区区几个小警员如何与深藏的暗流相抗衡？于是他们邀关宏峰入局，立誓要做一道照亮津港夜空的闪电，要撕开这座城市繁华的表象。挣扎，求索；威胁；死亡，他们能走到最后吗?还是会被这津港的夜色所吞没？" enabled="true" visible="true" accessible="true" x="116" y="431" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城2家店铺可玩" name="同城2家店铺可玩" label="同城2家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="470" width="92" height="17" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="437" width="36" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="332" width="390" height="185" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="332" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="530" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="白夜破晓" name="白夜破晓" label="白夜破晓" enabled="true" visible="true" accessible="true" x="116" y="347" width="250" height="21" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="517" width="390" height="185" index="3" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 推理 沉浸 高阶" name="中式 推理 沉浸 高阶" label="中式 推理 沉浸 高阶" enabled="true" visible="true" accessible="true" x="116" y="557" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="尖锐的求救警报声在白夜炸响，被惊醒的众人走出房间，竟发现身边全是熟悉的‘陌生人’。一个‘意外’，牵出一桩桩旧事。随着真相越来越清晰，众人却在这迷境中越发战战兢兢......还记得那最重要的事吗？" name="尖锐的求救警报声在白夜炸响，被惊醒的众人走出房间，竟发现身边全是熟悉的‘陌生人’。一个‘意外’，牵出一桩桩旧事。随着真相越来越清晰，众人却在这迷境中越发战战兢兢......还记得那最重要的事吗？" label="尖锐的求救警报声在白夜炸响，被惊醒的众人走出房间，竟发现身边全是熟悉的‘陌生人’。一个‘意外’，牵出一桩桩旧事。随着真相越来越清晰，众人却在这迷境中越发战战兢兢......还记得那最重要的事吗？" enabled="true" visible="true" accessible="true" x="116" y="616" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1家店铺可玩" name="同城1家店铺可玩" label="同城1家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="655" width="89" height="17" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="5人本" name="5人本" label="5人本" enabled="true" visible="true" accessible="true" x="29" y="622" width="36" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="517" width="390" height="185" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="517" width="390" height="185" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="715" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="《白夜》" name="《白夜》" label="《白夜》" enabled="true" visible="true" accessible="true" x="116" y="532" width="250" height="21" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="702" width="390" height="146" index="4" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="日式 推理 悬疑 高阶" name="日式 推理 悬疑 高阶" label="日式 推理 悬疑 高阶" enabled="true" visible="true" accessible="true" x="116" y="742" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="暂无剧情简介" name="暂无剧情简介" label="暂无剧情简介" enabled="true" visible="true" accessible="true" x="116" y="801" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6人本" name="6人本" label="6人本" enabled="true" visible="true" accessible="true" x="29" y="807" width="36" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="702" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="702" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="900" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="沉渊录-杀死白夜之人" name="沉渊录-杀死白夜之人" label="沉渊录-杀死白夜之人" enabled="true" visible="true" accessible="true" x="116" y="717" width="250" height="21" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="848" width="390" height="146" index="5" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="南海市的繁华建立在海港之上，这里得天独厚的地缘优势让其成为了繁华的，永不落幕的中心城。可是，海风吹不走夜幕下的血腥气味，这里，也是著名的罪恶之城。谋杀，黑帮，走私，带着血的金钱裹挟着这里的夜幕，然而，刺破黑暗的光明，也在这里诞生。全国最为著名的南海市警察学院坐落在此地，一代又一代的光明骑士们守护着这里的秩序。2005年，南海市警察学院心理教研室里，一个犯罪心理学教授召集了几名自己刚毕业进入公安厅的学生，他们面前，摆着一份厚厚的案件卷宗。真相，会否浮出水面？欢迎来到南海市。" name="南海市的繁华建立在海港之上，这里得天独厚的地缘优势让其成为了繁华的，永不落幕的中心城。可是，海风吹不走夜幕下的血腥气味，这里，也是著名的罪恶之城。谋杀，黑帮，走私，带着血的金钱裹挟着这里的夜幕，然而，刺破黑暗的光明，也在这里诞生。全国最为著名的南海市警察学院坐落在此地，一代又一代的光明骑士们守护着这里的秩序。2005年，南海市警察学院心理教研室里，一个犯罪心理学教授召集了几名自己刚毕业进入公安厅的学生，他们面前，摆着一份厚厚的案件卷宗。真相，会否浮出水面？欢迎来到南海市。" label="南海市的繁华建立在海港之上，这里得天独厚的地缘优势让其成为了繁华的，永不落幕的中心城。可是，海风吹不走夜幕下的血腥气味，这里，也是著名的罪恶之城。谋杀，黑帮，走私，带着血的金钱裹挟着这里的夜幕，然而，刺破黑暗的光明，也在这里诞生。全国最为著名的南海市警察学院坐落在此地，一代又一代的光明骑士们守护着这里的秩序。2005年，南海市警察学院心理教研室里，一个犯罪心理学教授召集了几名自己刚毕业进入公安厅的学生，他们面前，摆着一份厚厚的案件卷宗。真相，会否浮出水面？欢迎来到南海市。" enabled="true" visible="false" accessible="true" x="116" y="947" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="白夜之影" name="白夜之影" label="白夜之影" enabled="true" visible="false" accessible="true" x="168" y="863" width="198" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="6.7分" name="6.7分" label="6.7分" enabled="true" visible="false" accessible="true" x="188" y="916" width="28" height="18" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="false" accessible="true" x="29" y="953" width="35" height="14" index="3" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="848" width="390" height="146" index="4" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="848" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="8" y="1046" width="420" height="1" index="5" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="中式 推理 悬疑 进阶" name="中式 推理 悬疑 进阶" label="中式 推理 悬疑 进阶" enabled="true" visible="false" accessible="true" x="116" y="888" width="250" height="17" index="6" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="994" width="390" height="146" index="6" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="未来 推理 悬疑 进阶" name="未来 推理 悬疑 进阶" label="未来 推理 悬疑 进阶" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="白夜都" name="白夜都" label="白夜都" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="35" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="2030年至今，以21世纪初的人工智能、清洁能源、量子信息以及基因工程等技术为主的全新科技开始了爆发式发展。同时，随着人体器官商店合法化，自动驾驶、裸眼VR、意念传导、无线充电与磁悬浮等技术的普及，人类正式进入第四次科技革命时代。" name="2030年至今，以21世纪初的人工智能、清洁能源、量子信息以及基因工程等技术为主的全新科技开始了爆发式发展。同时，随着人体器官商店合法化，自动驾驶、裸眼VR、意念传导、无线充电与磁悬浮等技术的普及，人类正式进入第四次科技革命时代。" label="2030年至今，以21世纪初的人工智能、清洁能源、量子信息以及基因工程等技术为主的全新科技开始了爆发式发展。同时，随着人体器官商店合法化，自动驾驶、裸眼VR、意念传导、无线充电与磁悬浮等技术的普及，人类正式进入第四次科技革命时代。" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" accessible="true" x="0" y="1140" width="390" height="146" index="7" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="港澳 机制 博弈 新手" name="港澳 机制 博弈 新手" label="港澳 机制 博弈 新手" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="白夜灼心" name="白夜灼心" label="白夜灼心" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="21" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="false" accessible="true" x="0" y="132" width="35" height="14" index="2" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="3" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="390" height="146" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="132" width="420" height="1" index="4" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="1960年，香港最黑暗的时代。彼时还是英国殖民地的香港，人们生活在一片乌糟之中：华人警察备受英方欺压，面对乱象无心也无力治理；而黑帮则是愈发壮大，随处可见古惑仔逞凶斗狠。那些没饭吃、没工上、没未来的人们像是找到了希望一样纷纷加入。其中最大势的帮派莫过于13K。而有理想的人，在黑暗中根本找不到方向。理想？那不过是没饭吃的衰仔给自己强灌下的一碗止饿茶汤。近日，香港警务处增设国际扫毒组和犯罪调查科两个新部门，此外设立了总华探长职位，据说人选已经内定，但这哪是市井小民能讨论的事情呢。香港人自己戏称，“该饮茶饮茶，该食饭食饭，这总华探长唔知又系哪条英国人选出来的好狗，呐，日子总归系唔会好的。”不过最近街上的古惑仔们都乖乖收声，诡异的氛围笼罩在香港上空——13K的话事人年事已高，怕是要变天了。" name="1960年，香港最黑暗的时代。彼时还是英国殖民地的香港，人们生活在一片乌糟之中：华人警察备受英方欺压，面对乱象无心也无力治理；而黑帮则是愈发壮大，随处可见古惑仔逞凶斗狠。那些没饭吃、没工上、没未来的人们像是找到了希望一样纷纷加入。其中最大势的帮派莫过于13K。而有理想的人，在黑暗中根本找不到方向。理想？那不过是没饭吃的衰仔给自己强灌下的一碗止饿茶汤。近日，香港警务处增设国际扫毒组和犯罪调查科两个新部门，此外设立了总华探长职位，据说人选已经内定，但这哪是市井小民能讨论的事情呢。香港人自己戏称，“该饮茶饮茶，该食饭食饭，这总华探长唔知又系哪条英国人选出来的好狗，呐，日子总归系唔会好的。”不过最近街上的古惑仔们都乖乖收声，诡异的氛围笼罩在香港上空——13K的话事人年事已高，怕是要变天了。" label="1960年，香港最黑暗的时代。彼时还是英国殖民地的香港，人们生活在一片乌糟之中：华人警察备受英方欺压，面对乱象无心也无力治理；而黑帮则是愈发壮大，随处可见古惑仔逞凶斗狠。那些没饭吃、没工上、没未来的人们像是找到了希望一样纷纷加入。其中最大势的帮派莫过于13K。而有理想的人，在黑暗中根本找不到方向。理想？那不过是没饭吃的衰仔给自己强灌下的一碗止饿茶汤。近日，香港警务处增设国际扫毒组和犯罪调查科两个新部门，此外设立了总华探长职位，据说人选已经内定，但这哪是市井小民能讨论的事情呢。香港人自己戏称，“该饮茶饮茶，该食饭食饭，这总华探长唔知又系哪条英国人选出来的好狗，呐，日子总归系唔会好的。”不过最近街上的古惑仔们都乖乖收声，诡异的氛围笼罩在香港上空——13K的话事人年事已高，怕是要变天了。" enabled="true" visible="false" accessible="true" x="0" y="132" width="250" height="17" index="5" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="810" width="390" height="0" index="8" traits=""/>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="水平滚动条, 1页" label="水平滚动条, 1页" enabled="true" visible="false" accessible="false" x="0" y="777" width="390" height="30" index="9" traits="Adjustable">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="3" y="804" width="381" height="3" index="0" traits=""/>
+                              </XCUIElementTypeOther>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="No more data" name="No more data" label="No more data" enabled="true" visible="false" accessible="true" x="0" y="1286" width="390" height="44" index="10" traits="StaticText"/>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Pull down to refresh" name="Pull down to refresh" label="Pull down to refresh" enabled="true" visible="false" accessible="true" x="0" y="78" width="390" height="54" index="11" traits="StaticText"/>
+                            </XCUIElementTypeTable>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeScrollView>
+                      </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="toplogowhite" enabled="true" visible="false" accessible="false" x="173" y="10" width="44" height="16" index="1" traits="Image"/>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="1" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits=""/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

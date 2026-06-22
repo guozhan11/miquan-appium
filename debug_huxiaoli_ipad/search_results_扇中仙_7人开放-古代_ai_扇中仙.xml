@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="谜圈" label="谜圈" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="" processId="691" bundleId="com.juhaowan123.www">
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="47" width="390" height="44" index="0" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="16" y="52" width="314" height="34" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" name="home_top_search" enabled="true" visible="true" accessible="false" x="32" y="61" width="15" height="16" index="0" traits="Image"/>
+                            <XCUIElementTypeTextField type="XCUIElementTypeTextField" value="扇中仙" label="" enabled="true" visible="true" accessible="true" x="52" y="52" width="248" height="34" index="1" placeholderValue=" 搜索剧本 发行 店铺 组局 用户" traits=""/>
+                            <XCUIElementTypeButton type="XCUIElementTypeButton" name="sys clear icon" label="sys clear icon" enabled="true" visible="true" accessible="true" x="300" y="54" width="30" height="30" index="2" traits="Button"/>
+                          </XCUIElementTypeOther>
+                          <XCUIElementTypeButton type="XCUIElementTypeButton" name="取消" label="取消" enabled="true" visible="true" accessible="true" x="330" y="47" width="60" height="44" index="1" traits="Button">
+                            <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="取消" name="取消" label="取消" enabled="true" visible="true" accessible="false" x="346" y="59" width="28" height="20" index="0" traits="StaticText"/>
+                          </XCUIElementTypeButton>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="">
+                            <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="0" traits="Image"/>
+                            <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="88" width="390" height="44" index="1" traits="">
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="全部" label="全部" enabled="true" visible="true" accessible="true" x="12" y="88" width="30" height="44" index="0" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="全部" name="全部" label="全部" enabled="true" visible="true" accessible="false" x="12" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="剧本" label="剧本" enabled="true" visible="true" accessible="true" x="66" y="88" width="32" height="44" index="1" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="剧本" name="剧本" label="剧本" enabled="true" visible="true" accessible="false" x="66" y="98" width="32" height="24" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="true" x="122" y="88" width="30" height="44" index="2" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="兴趣" name="兴趣" label="兴趣" enabled="true" visible="true" accessible="false" x="122" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="店铺" label="店铺" enabled="true" visible="true" accessible="true" x="176" y="88" width="30" height="44" index="3" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="店铺" name="店铺" label="店铺" enabled="true" visible="true" accessible="false" x="176" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="组局" label="组局" enabled="true" visible="true" accessible="true" x="230" y="88" width="30" height="44" index="4" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="组局" name="组局" label="组局" enabled="true" visible="true" accessible="false" x="230" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="用户" label="用户" enabled="true" visible="true" accessible="true" x="284" y="88" width="30" height="44" index="5" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="用户" name="用户" label="用户" enabled="true" visible="true" accessible="false" x="284" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeButton type="XCUIElementTypeButton" name="发行" label="发行" enabled="true" visible="true" accessible="true" x="338" y="88" width="30" height="44" index="6" traits="Button">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="发行" name="发行" label="发行" enabled="true" visible="true" accessible="false" x="338" y="99" width="30" height="22" index="0" traits="StaticText"/>
+                              </XCUIElementTypeButton>
+                              <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="74" y="123" width="16" height="3" index="7" traits="Image"/>
+                            </XCUIElementTypeScrollView>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeOther>
+                        <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="2" traits="">
+                          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="712" index="0" traits="">
+                            <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" accessible="false" x="0" y="132" width="390" height="678" index="0" traits="">
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="147" width="390" height="0" index="0" traits=""/>
+                              <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" accessible="true" x="0" y="147" width="390" height="202" index="1" traits="">
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="架空 推理 悬疑 高阶" name="架空 推理 悬疑 高阶" label="架空 推理 悬疑 高阶" enabled="true" visible="true" accessible="true" x="116" y="187" width="250" height="17" index="0" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="话说靖康元年（1126年），于两浙路婺州地区爆发过一次恐怖瘟疫，患者全身发斑，身体虚弱，痛苦而不得死，因发病原因不明，难以医治，被百姓称作“仙人斑”。正当人民四散流离，哀号遍野之时，却又一医馆名曰【方仁堂】横空出世，其堂主姓韩，艺术高明，闻名乡闾，尤其擅长治“仙人斑”，入馆就医者常常当日便可痊愈，且医品高尚，行医从不克收费用，常为穷苦百姓免费切诊开方。慢慢的，“仙人斑”的事情终于平息了。靖康二年（1126年），北宋亡国于金人之手，同年南宋建国，赵构为帝，定年号“建炎”，意为“建隆再造，以火克金”,“建隆”是北宋开国之君赵匡胤的第一个年号，赵匡想恢复太祖时代的文治武功，“金”是指金朝。亦欲灭金。世事无常，时代变迁，朝代更替，【方仁堂】却一直屹立不倒，存至今日。婺州不仅好山好水，还有两段人尽皆知的好故事。其一是关于盗圣【摘月】的传说，相传在北宋末年，【摘月】时常劫富济贫，他轻功甚好，来去无踪，从来没有人见到过它他真正面目，所偷之处会留下一枚【波心月镖】，但也没有人见过这飞镖真正的样子，关于【摘月】的故事，一个接一个，说也说不尽，讲也讲不完。其二则是关于【方仁堂】还有一则传说，传闻【方仁堂】内有一镇馆之宝曰【凌波扇】，有人说这扇子是北宋皇室的遗物，价值连城；也有人说这是从神农时代流传下来的宝物，里面蕴含着医法万千，但没有人见过它的样子，也不知道它的具体放在何处。今年是嘉泰四年（1204），【方仁堂】已是婺州十分有名气的大医馆，现任堂主【孙神树】济世救人，善名远扬。可谁也想不到，【方仁堂】内，一段与前世旧梦息息相关的故事正在上演……." name="话说靖康元年（1126年），于两浙路婺州地区爆发过一次恐怖瘟疫，患者全身发斑，身体虚弱，痛苦而不得死，因发病原因不明，难以医治，被百姓称作“仙人斑”。正当人民四散流离，哀号遍野之时，却又一医馆名曰【方仁堂】横空出世，其堂主姓韩，艺术高明，闻名乡闾，尤其擅长治“仙人斑”，入馆就医者常常当日便可痊愈，且医品高尚，行医从不克收费用，常为穷苦百姓免费切诊开方。慢慢的，“仙人斑”的事情终于平息了。靖康二年（1126年），北宋亡国于金人之手，同年南宋建国，赵构为帝，定年号“建炎”，意为“建隆再造，以火克金”,“建隆”是北宋开国之君赵匡胤的第一个年号，赵匡想恢复太祖时代的文治武功，“金”是指金朝。亦欲灭金。世事无常，时代变迁，朝代更替，【方仁堂】却一直屹立不倒，存至今日。婺州不仅好山好水，还有两段人尽皆知的好故事。其一是关于盗圣【摘月】的传说，相传在北宋末年，【摘月】时常劫富济贫，他轻功甚好，来去无踪，从来没有人见到过它他真正面目，所偷之处会留下一枚【波心月镖】，但也没有人见过这飞镖真正的样子，关于【摘月】的故事，一个接一个，说也说不尽，讲也讲不完。其二则是关于【方仁堂】还有一则传说，传闻【方仁堂】内有一镇馆之宝曰【凌波扇】，有人说这扇子是北宋皇室的遗物，价值连城；也有人说这是从神农时代流传下来的宝物，里面蕴含着医法万千，但没有人见过它的样子，也不知道它的具体放在何处。今年是嘉泰四年（1204），【方仁堂】已是婺州十分有名气的大医馆，现任堂主【孙神树】济世救人，善名远扬。可谁也想不到，【方仁堂】内，一段与前世旧梦息息相关的故事正在上演……." label="话说靖康元年（1126年），于两浙路婺州地区爆发过一次恐怖瘟疫，患者全身发斑，身体虚弱，痛苦而不得死，因发病原因不明，难以医治，被百姓称作“仙人斑”。正当人民四散流离，哀号遍野之时，却又一医馆名曰【方仁堂】横空出世，其堂主姓韩，艺术高明，闻名乡闾，尤其擅长治“仙人斑”，入馆就医者常常当日便可痊愈，且医品高尚，行医从不克收费用，常为穷苦百姓免费切诊开方。慢慢的，“仙人斑”的事情终于平息了。靖康二年（1126年），北宋亡国于金人之手，同年南宋建国，赵构为帝，定年号“建炎”，意为“建隆再造，以火克金”,“建隆”是北宋开国之君赵匡胤的第一个年号，赵匡想恢复太祖时代的文治武功，“金”是指金朝。亦欲灭金。世事无常，时代变迁，朝代更替，【方仁堂】却一直屹立不倒，存至今日。婺州不仅好山好水，还有两段人尽皆知的好故事。其一是关于盗圣【摘月】的传说，相传在北宋末年，【摘月】时常劫富济贫，他轻功甚好，来去无踪，从来没有人见到过它他真正面目，所偷之处会留下一枚【波心月镖】，但也没有人见过这飞镖真正的样子，关于【摘月】的故事，一个接一个，说也说不尽，讲也讲不完。其二则是关于【方仁堂】还有一则传说，传闻【方仁堂】内有一镇馆之宝曰【凌波扇】，有人说这扇子是北宋皇室的遗物，价值连城；也有人说这是从神农时代流传下来的宝物，里面蕴含着医法万千，但没有人见过它的样子，也不知道它的具体放在何处。今年是嘉泰四年（1204），【方仁堂】已是婺州十分有名气的大医馆，现任堂主【孙神树】济世救人，善名远扬。可谁也想不到，【方仁堂】内，一段与前世旧梦息息相关的故事正在上演……." enabled="true" visible="true" accessible="true" x="116" y="246" width="250" height="17" index="1" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1家店铺可玩" name="同城1家店铺可玩" label="同城1家店铺可玩" enabled="true" visible="true" accessible="true" x="46" y="285" width="89" height="17" index="2" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="同城1个省钱团购，低至¥108起" name="同城1个省钱团购，低至¥108起" label="同城1个省钱团购，低至¥108起" enabled="true" visible="true" accessible="true" x="67" y="308" width="164" height="17" index="3" traits="StaticText"/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="7人本" name="7人本" label="7人本" enabled="true" visible="true" accessible="true" x="29" y="252" width="35" height="14" index="4" traits="StaticText"/>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="5" traits="">
+                                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="147" width="390" height="202" index="0" traits=""/>
+                                </XCUIElementTypeOther>
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="8" y="345" width="420" height="1" index="6" traits=""/>
+                                <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="扇中仙" name="扇中仙" label="扇中仙" enabled="true" visible="true" accessible="true" x="116" y="162" width="250" height="21" index="7" traits="StaticText"/>
+                              </XCUIElementTypeCell>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="349" width="390" height="0" index="2" traits=""/>
+                              <XCUIElementTypeOther type="XCUIElementTypeOther" value="0%" name="水平滚动条, 1页" label="水平滚动条, 1页" enabled="true" visible="false" accessible="false" x="0" y="777" width="390" height="30" index="3" traits="Adjustable">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="3" y="804" width="384" height="3" index="0" traits=""/>
+                              </XCUIElementTypeOther>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="No more data" name="No more data" label="No more data" enabled="true" visible="false" accessible="true" x="0" y="810" width="390" height="44" index="4" traits="StaticText"/>
+                              <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Pull down to refresh" name="Pull down to refresh" label="Pull down to refresh" enabled="true" visible="false" accessible="true" x="0" y="78" width="390" height="54" index="5" traits="StaticText"/>
+                            </XCUIElementTypeTable>
+                          </XCUIElementTypeOther>
+                        </XCUIElementTypeScrollView>
+                      </XCUIElementTypeOther>
+                    </XCUIElementTypeOther>
+                  </XCUIElementTypeOther>
+                </XCUIElementTypeOther>
+              </XCUIElementTypeOther>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+      <XCUIElementTypeImage type="XCUIElementTypeImage" name="toplogowhite" enabled="true" visible="false" accessible="false" x="173" y="10" width="44" height="16" index="1" traits="Image"/>
+    </XCUIElementTypeWindow>
+    <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="1" traits="">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits="">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="390" height="844" index="0" traits=""/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

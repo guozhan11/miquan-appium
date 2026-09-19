@@ -1,1 +1,9 @@
 .env
+.DS_Store
+.venv/
+__pycache__/
+node_modules
+*.cloud-backup
+logs/
+outputs/**/*.inspect.ndjson
+outputs/**/*预览.png
